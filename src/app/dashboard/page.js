@@ -1,10 +1,10 @@
 "use client";
 import AgentGrid from "@/components/dashboard/AgentGrid";
 import Footer from "@/components/dashboard/Footer";
-import Header from "@/components/dashboard/Header";
 import Pagination from "@/components/dashboard/Pagination";
 import SearchSection from "@/components/dashboard/SearchSection";
 import WelcomeSection from "@/components/dashboard/WelcomeSection";
+import Header from "@/components/header/Header";
 import * as React from "react";
 
 

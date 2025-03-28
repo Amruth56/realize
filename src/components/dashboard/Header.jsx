@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const DashBoardHeader = () => {
   return (
     <header className="flex justify-between items-center px-20 py-0 h-16 bg-white shadow-[0_1px_2px_rgba(0,0,0,0.05)] max-md:px-10 max-md:py-8 max-sm:p-4">
       <div>
@@ -35,4 +35,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default DashBoardHeader;
