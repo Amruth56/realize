@@ -2,9 +2,17 @@
 "use client";
 import React from "react";
 import OTPInput from "./OTPInput";
+import { useRouter } from 'next/navigation'
+
 // import Logo from "./Logo";
 
 function SignUpFormOtp() {
+    const router = useRouter()
+
+const loginForm = () => {
+    router.push('/login')
+}
+
   return (
     <section className="flex flex-col gap-36 px-12 pt-12 pb-40 w-[560px] max-md:w-full max-sm:px-6 max-sm:py-8">
       {/* <Logo /> */}
@@ -96,7 +104,8 @@ function SignUpFormOtp() {
         </div>
 
         <button
-          type="submit"
+          type="button"
+          onClick={loginForm}
           className="h-12 text-base font-medium text-white bg-blue-600 rounded-lg cursor-pointer border-[none] w-[170px]"
         >
           Sign Up

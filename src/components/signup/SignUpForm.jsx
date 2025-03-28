@@ -1,7 +1,15 @@
 "use client";
 import React from "react";
+import { useRouter } from 'next/navigation'
+
 
 function SignUpForm() {
+  const router = useRouter()
+
+  const handleOpt = () => {
+    router.push('/signup-otp')
+  }
+
   return (
     <div className="flex flex-col gap-6">
       <header className="mb-4">
@@ -63,6 +71,7 @@ function SignUpForm() {
 
       <button
         type="submit"
+        onClick={handleOpt}
         className="p-3.5 mt-6 text-base font-medium text-white bg-blue-600 rounded-lg cursor-pointer border-none"
       >
         Send OTP

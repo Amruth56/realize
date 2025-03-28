@@ -2,9 +2,12 @@
 import BackgroundIcon from "@/components/loginotp/BackgroundIcon";
 import OTPInput from "@/components/signupotp/OTPInput";
 import React from "react";
+import { useRouter } from 'next/navigation'
+
 
 
 function LoginFormOtp() {
+    const router = useRouter()
   const [email, setEmail] = React.useState("");
 
   const handleEmailChange = (e) => {
@@ -18,6 +21,7 @@ function LoginFormOtp() {
 
   const handleSignIn = () => {
     // Implementation for sign in
+    router.push('/dashboard')
     console.log("Signing in");
   };
 

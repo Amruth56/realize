@@ -1,10 +1,12 @@
 "use client";
 import React, { useState } from "react";
 // import Logo from "./Logo";
+import { useRouter } from 'next/navigation'
+
 
 function LoginForm() {
   const [email, setEmail] = useState("");
-
+  const router = useRouter()
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -14,6 +16,10 @@ function LoginForm() {
     // Handle form submission logic here
     console.log("Sending OTP to:", email);
   };
+
+  const handleLoginOtp = () => {
+    router.push('login-otp')
+  }
 
   return (
     <div className="flex flex-col p-12 w-1/2 max-md:w-full">
@@ -50,6 +56,7 @@ function LoginForm() {
 
         <button
           type="submit"
+          onClick={handleLoginOtp}
           className="w-full h-12 text-base text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
         >
           Send OTP
