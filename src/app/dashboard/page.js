@@ -1,5 +1,6 @@
 "use client";
 import AgentGrid from "@/components/dashboard/AgentGrid";
+import AiBot from "@/components/dashboard/AiBot";
 import Footer from "@/components/dashboard/Footer";
 import Pagination from "@/components/dashboard/Pagination";
 import SearchSection from "@/components/dashboard/SearchSection";
@@ -23,6 +24,7 @@ function InputDesign() {
           <AgentGrid />
           <Pagination />
         </main>
+        <AiBot/>
         <Footer />
       </div>
     </>

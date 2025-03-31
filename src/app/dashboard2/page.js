@@ -1,22 +1,22 @@
 "use client";
+import SearchSection from "@/components/dashboard/SearchSection";
+import WelcomeSection from "@/components/dashboard/WelcomeSection";
 import AgentsGrid2 from "@/components/dashboard2/AgentsGrid2";
-import Footer2 from "@/components/dashboard2/Footer2";
-import Header2 from "@/components/dashboard2/Header2";
-import SearchSection2 from "@/components/dashboard2/SearchSection2";
-import WelcomeSection2 from "@/components/dashboard2/WelcomeSection2";
+import Header from "@/components/header/Header";
+import Footer from "@/components/ImplementationTrackerHeader.jsx/Footer";
 import React from "react";
 
 
 const RealizeDashboard = () => {
   return (
     <div className="flex flex-col bg-white min-h-screen">
-      <Header2 />
+      <Header />
       <main className="flex-1">
-        <WelcomeSection2 />
-        <SearchSection2 />
+        <WelcomeSection />
+        <SearchSection />
         <AgentsGrid2 />
       </main>
-      <Footer2 />
+      <Footer />
     </div>
   );
 };

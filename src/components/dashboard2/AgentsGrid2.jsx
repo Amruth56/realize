@@ -23,7 +23,7 @@ const AgentsGrid2 = () => {
 
   return (
     <section className="px-20 py-8 bg-gray-50 max-md:px-10 max-sm:px-5">
-      <div className="mx-auto max-w-screen-xl">
+      <div className="mx-auto ">
         <div className="grid grid-cols-3 gap-6 max-md:grid-cols-2 max-sm:grid-cols-1">
           {agents.map((agent) => (
             <AgentCard2
