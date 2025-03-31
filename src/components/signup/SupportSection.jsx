@@ -9,8 +9,8 @@ function SupportSection() {
         className="w-12 h-12 rounded-full"
       />
       <div className="flex-1">
-        <h3 className="mb-4 text-base font-medium text-white">Need help?</h3>
-        <p className="text-base leading-5 text-blue-100">
+        <h3 className="mb-4 text-base font-medium text-blue-600">Need help?</h3>
+        <p className="text-base leading-5 text-blue-600">
           I'm here to guide you through the sign-up process. Feel free to ask
           any questions!
         </p>
