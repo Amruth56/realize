@@ -1,9 +1,8 @@
 "use client";
+import Header from "@/components/header/Header";
 import InventoryDashboardCards from "@/components/inventoryAgent/InventoryDashboardCards";
 import InventoryFooter from "@/components/inventoryAgent/InventoryFooter";
-import InventoryHeader from "@/components/inventoryAgent/InventoryHeader";
 import InventoryInfoBanner from "@/components/inventoryAgent/InventoryInfoBanner";
-import InventoryStatusNotification from "@/components/inventoryAgent/InventoryStatusNotification";
 import React from "react";
 
 
@@ -13,11 +12,10 @@ import React from "react";
 function InventoryAgentOverview() {
   return (
     <main className="flex flex-col bg-white min-h-[screen]">
-      <InventoryHeader />
+      <Header />
       <InventoryInfoBanner />
       <InventoryDashboardCards />
       <InventoryFooter />
-      <InventoryStatusNotification />
     </main>
   );
 }

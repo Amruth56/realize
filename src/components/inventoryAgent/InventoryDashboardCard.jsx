@@ -1,18 +1,6 @@
 import React from "react";
+import { useRouter } from "next/navigation"; // If using React Router, use `useNavigate` from 'react-router-dom'
 
-/**
- * Reusable card component for dashboard items
- *
- * @param {Object} props - Component props
- * @param {React.ReactNode} props.icon - SVG icon for the card
- * @param {Array} props.tags - Array of tag objects with text and color information
- * @param {string} props.title - Card title
- * @param {string} props.description - Card description
- * @param {React.ReactNode} props.content - Card main content (chart, progress bar, etc.)
- * @param {Array} props.stats - Array of stat objects with label and value
- * @param {string} props.buttonText - Text for the action button
- * @param {string} props.buttonColor - Color class for the button (e.g., "bg-blue-600")
- */
 function InventoryDashboardCard({
   icon,
   tags,
@@ -22,7 +10,16 @@ function InventoryDashboardCard({
   stats,
   buttonText,
   buttonColor,
+  route,
 }) {
+  const router = useRouter();
+
+  const handleClick = () => {
+    if (route) {
+      router.push(route); // Navigate to the specified route
+    }
+  };
+
   return (
     <article className="flex flex-col p-6 bg-white rounded-xl shadow-md">
       <header className="flex justify-between items-center mb-4">
@@ -55,6 +52,7 @@ function InventoryDashboardCard({
 
       <button
         className={`py-2.5 w-full text-base text-white ${buttonColor} rounded-lg`}
+        onClick={handleClick}
       >
         {buttonText}
       </button>

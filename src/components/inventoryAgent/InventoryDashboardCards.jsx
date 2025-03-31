@@ -1,6 +1,7 @@
 import React from "react";
 import InventoryDashboardCard from "./InventoryDashboardCard";
 
+
 /**
  * Container for all dashboard cards
  */
@@ -113,38 +114,42 @@ function InventoryDashboardCards() {
   return (
     <section className="flex flex-1 justify-center px-20 py-12 max-md:px-10 max-sm:px-5">
       <div className="grid grid-cols-3 gap-8 w-full max-w-screen-xl max-md:grid-cols-2 max-sm:grid-cols-1">
-        <InventoryDashboardCard
-          icon={plannedPurchasesIcon}
-          tags={plannedPurchasesTags}
-          title="Planned Purchases"
-          description="Schedule &amp; Prioritize Tech Investments"
-          content={plannedPurchasesContent}
-          stats={plannedPurchasesStats}
-          buttonText="View Timeline"
-          buttonColor="bg-blue-600"
-        />
+      <InventoryDashboardCard
+  icon={plannedPurchasesIcon}
+  tags={plannedPurchasesTags}
+  title="Planned Purchases"
+  description="Schedule & Prioritize Tech Investments"
+  content={plannedPurchasesContent}
+  stats={plannedPurchasesStats}
+  buttonText="View Timeline"
+  buttonColor="bg-blue-600"
+  route="planned-purchase"
+/>
 
-        <InventoryDashboardCard
-          icon={purchaseInventoryIcon}
-          tags={purchaseInventoryTags}
-          title="Purchase Inventory"
-          description="Analyze Spend &amp; Vendor Activity"
-          content={purchaseInventoryContent}
-          stats={purchaseInventoryStats}
-          buttonText="View Inventory"
-          buttonColor="bg-violet-600"
-        />
+<InventoryDashboardCard
+  icon={purchaseInventoryIcon}
+  tags={purchaseInventoryTags}
+  title="Purchase Inventory"
+  description="Analyze Spend & Vendor Activity"
+  content={purchaseInventoryContent}
+  stats={purchaseInventoryStats}
+  buttonText="View Inventory"
+  buttonColor="bg-violet-600"
+  route="purchase-inventory"
+/>
 
-        <InventoryDashboardCard
-          icon={roiDashboardIcon}
-          tags={roiDashboardTags}
-          title="ROI Dashboard"
-          description="Evaluate Performance of Investments"
-          content={roiDashboardContent}
-          stats={roiDashboardStats}
-          buttonText="Open Dashboard"
-          buttonColor="bg-emerald-600"
-        />
+<InventoryDashboardCard
+  icon={roiDashboardIcon}
+  tags={roiDashboardTags}
+  title="ROI Dashboard"
+  description="Evaluate Performance of Investments"
+  content={roiDashboardContent}
+  stats={roiDashboardStats}
+  buttonText="Open Dashboard"
+  buttonColor="bg-emerald-600"
+  route="roidashboard"
+/>
+
       </div>
     </section>
   );
