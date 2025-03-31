@@ -2,7 +2,7 @@ import React from "react";
 
 const WelcomeSection = () => {
   return (
-    <section className="px-20 py-8 mt-16 max-md:px-10 max-md:py-8 max-sm:p-4">
+    <section className="px-20 py-8 max-md:px-10 max-md:py-8 max-sm:p-4 bg-blue-50">
       <article className="flex gap-6 p-6 bg-white rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.05)] max-sm:flex-col max-sm:items-center max-sm:text-center">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/d39914e84d85c37858a537a0b4cd258af7aa1008"
