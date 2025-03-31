@@ -14,7 +14,7 @@ const loginForm = () => {
 }
 
   return (
-    <section className="flex flex-col gap-36 px-12 pt-12 pb-40 w-[560px] max-md:w-full max-sm:px-6 max-sm:py-8">
+    <section className="flex flex-col gap-36 pl-12 pr-20 pt-12 pb-40 w-[560px] max-md:w-full max-sm:px-6 max-sm:py-8">
       {/* <Logo /> */}
 
       <form className="flex flex-col gap-6">
@@ -103,6 +103,7 @@ const loginForm = () => {
           </label>
         </div>
 
+<div className="flex justify-center">
         <button
           type="button"
           onClick={loginForm}
@@ -110,6 +111,7 @@ const loginForm = () => {
         >
           Sign Up
         </button>
+        </div>
       </form>
 
       <footer className="mt-6 text-sm text-center text-gray-600">

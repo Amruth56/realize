@@ -2,12 +2,10 @@
 import BackgroundIcon from "@/components/loginotp/BackgroundIcon";
 import OTPInput from "@/components/signupotp/OTPInput";
 import React from "react";
-import { useRouter } from 'next/navigation'
-
-
+import { useRouter } from "next/navigation";
 
 function LoginFormOtp() {
-    const router = useRouter()
+  const router = useRouter();
   const [email, setEmail] = React.useState("");
 
   const handleEmailChange = (e) => {
@@ -21,16 +19,43 @@ function LoginFormOtp() {
 
   const handleSignIn = () => {
     // Implementation for sign in
-    router.push('/dashboard')
+    router.push("/dashboard");
     console.log("Signing in");
   };
 
   return (
-    <main className="flex justify-center items-center p-5 mx-auto min-h-screen">
-      <section className="flex overflow-hidden bg-white rounded-2xl h-[686px] shadow-[0_8px_10px_rgba(0,0,0,0.1),0_20px_25px_rgba(0,0,0,0.1)] w-[896px] max-md:flex-col max-md:w-full max-md:max-w-4xl max-md:h-auto max-sm:shadow-none">
+    <main
+      className="
+        flex 
+        items-center 
+        justify-center 
+        min-h-screen 
+        bg-gradient-to-r 
+        from-[#f8fafc] 
+        to-white 
+        p-4
+      "
+    >
+      <section
+        className="
+          flex 
+          gap-8
+          overflow-hidden
+          rounded-2xl
+          shadow-[0_8px_10px_rgba(0,0,0,0.1),0_20px_25px_rgba(0,0,0,0.1)]
+          w-[1152px]
+          h-[928px] /* adjust as needed */
+          bg-white
+          max-md:flex-col
+          max-md:w-full
+          max-md:h-auto
+          max-md:max-w-[991px]
+          max-sm:max-w-screen-sm
+          max-sm:shadow-none
+        "
+      >
         {/* Left Section - Form */}
         <div className="relative px-12 py-8 w-6/12 max-md:p-8 max-md:w-full max-sm:p-5">
-
           <div className="mt-12 max-w-[355px]">
             <header className="mb-11">
               <h1 className="mb-2.5 text-2xl font-bold leading-6 text-gray-900">
@@ -45,7 +70,7 @@ function LoginFormOtp() {
               <div className="mb-3">
                 <label
                   htmlFor="email"
-                  className="mb-2 text-sm font-medium text-gray-700 block"
+                  className="mb-2 text-sm font-medium text-gray-700 block "
                 >
                   Email or Phone Number
                 </label>
@@ -56,7 +81,7 @@ function LoginFormOtp() {
                     value={email}
                     onChange={handleEmailChange}
                     placeholder="john@company.com or 9111111111"
-                    className="px-4 py-0 w-full text-base text-gray-900 rounded-lg border border-gray-300 border-solid h-[50px]"
+                    className="px-4 py-0 w-full text-base text-gray-900 rounded-lg border border-gray-300 border-solid h-[50px] mb-6"
                   />
                 </div>
               </div>
@@ -65,12 +90,11 @@ function LoginFormOtp() {
                 <label
                   htmlFor="otp"
                   className="px-1 py-0 mb-2 text-sm font-medium text-gray-700 bg-white block"
-                >
-                  OTP
-                </label>
+                ></label>
                 <OTPInput length={6} />
               </div>
 
+<div>
               <button
                 type="button"
                 onClick={handleResendOtp}
@@ -78,7 +102,7 @@ function LoginFormOtp() {
               >
                 Resend OTP
               </button>
-
+              </div>
               <button
                 type="button"
                 onClick={handleSignIn}
@@ -111,9 +135,15 @@ function LoginFormOtp() {
                 className="w-12 h-12 rounded-full"
               />
               <div className="text-sm leading-5">
-                <p className="mb-1">Hi there! I'm here to help you get the</p>
-                <p className="mb-1">most out of your tech investments.</p>
-                <p className="mb-1">Let's get started!</p>
+                <p className="mb-1 text-blue-600">
+                  Hi there! I'm here to help you get the
+                </p>
+                <p className="mb-1 text-blue-600">
+                  most out of your tech investments.
+                </p>
+                <p className="mb-1 text-blue-600">
+                  Let's get started!
+                </p>
               </div>
             </div>
           </div>

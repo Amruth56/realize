@@ -1,13 +1,36 @@
 "use client";
+import React from "react";
 import LoginForm from "@/components/login/LoginForm";
 import WelcomePanel from "@/components/login/WelcomePanel";
-import React from "react";
 
 function LoginPage() {
   return (
-    <section className="flex flex-col items-center w-full bg-[linear-gradient(90deg,#FFF_0%,#EFF6FF_100%)] min-h-screen">
-      <main className="flex justify-center items-center my-96 bg-white rounded-2xl shadow-lg h-[686px] w-[896px] max-md:mx-5 max-md:my-10 max-md:w-full max-sm:mx-4 max-sm:my-5">
-        <div className="flex justify-between size-full">
+    <section className="
+    flex 
+    items-center 
+    justify-center 
+    min-h-screen 
+    bg-gradient-to-r 
+    from-[#f8fafc] 
+    to-white 
+    p-4
+  ">
+      <main className="
+          flex
+          overflow-hidden
+          rounded-2xl
+          shadow-[0_8px_10px_rgba(0,0,0,0.1),0_20px_25px_rgba(0,0,0,0.1)]
+          w-[1152px]
+          h-[928px] /* adjust as needed */
+          bg-white
+          max-md:flex-col
+          max-md:w-full
+          max-md:h-auto
+          max-md:max-w-[991px]
+          max-sm:max-w-screen-sm
+          max-sm:shadow-none
+        ">
+        <div className="flex justify-between w-full">
           <LoginForm />
           <WelcomePanel />
         </div>

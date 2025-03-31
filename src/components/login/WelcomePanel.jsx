@@ -17,13 +17,13 @@ function WelcomePanel() {
             className="w-[48px] h-[48px] rounded-full"
           />
           <div className="flex flex-col gap-1">
-            <p className="text-sm text-white">
+            <p className="text-sm text-blue-600">
               Hi there! I'm here to help you get the
             </p>
-            <p className="text-sm text-white">
+            <p className="text-sm text-blue-600">
               most out of your tech investments.
             </p>
-            <p className="text-sm text-white">Let's get started!</p>
+            <p className="text-sm text-blue-600">Let's get started!</p>
           </div>
         </div>
       </div>

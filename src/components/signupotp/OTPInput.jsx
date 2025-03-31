@@ -59,11 +59,11 @@ function OTPInput() {
   };
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 my-6">
       <label htmlFor="otp-1" className="text-sm font-medium text-gray-700">
         OTP
       </label>
-      <div className="flex gap-8">
+      <div className="flex gap-4">
         {otp.map((digit, index) => (
           <input
             key={index}
