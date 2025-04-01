@@ -3,17 +3,17 @@ import React from "react";
 const PeerComparisonAIInsights = () => {
   return (
     <section className="flex flex-col justify-center p-6 w-full bg-white rounded-xl shadow-[0px_1px_2px_rgba(0,0,0,0.05)] max-md:px-5 max-md:mr-0.5 max-md:max-w-full">
-      <div className="flex flex-wrap gap-6 pr-20 bg-black bg-opacity-0 max-md:pr-5">
+      <div className="flex flex-wrap gap-6 pr-20 max-md:pr-5">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/8f286a89216d48f19ceeeaf7437e58bd/cc8b803c88dd5ec7e37ad9f8f0efe5fbbf50a0a3?placeholderIfAbsent=true"
           className="object-contain shrink-0 self-start w-12 rounded-full aspect-square"
           alt="AI assistant avatar"
         />
-        <div className="flex flex-col py-0.5 bg-black bg-opacity-0">
+        <div className="flex flex-col py-0.5">
           <h2 className="self-start text-lg font-semibold leading-none text-black">
             AI Insights
           </h2>
-          <ul className="flex flex-col items-start py-1 pr-3 mt-4 w-full bg-black bg-opacity-0">
+          <ul className="flex flex-col items-start py-1 pr-3 mt-4 w-full">
             <li className="flex self-stretch w-full">
               <div className="flex overflow-hidden justify-center items-center self-start min-h-4">
                 <img

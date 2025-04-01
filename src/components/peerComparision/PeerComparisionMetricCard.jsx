@@ -9,12 +9,12 @@ const PeerComparisonMetricCard = ({
 }) => {
   return (
     <section className="grow p-6 w-full bg-white rounded-xl shadow-[0px_1px_2px_rgba(0,0,0,0.05)] max-md:px-5 max-md:mt-6">
-      <h3 className="py-1.5 text-lg font-semibold text-black bg-black bg-opacity-0 max-md:pr-5">
+      <h3 className="py-1.5 text-lg font-semibold text-black max-md:pr-5">
         {title}
       </h3>
-      <div className="mt-4 bg-black bg-opacity-0">
-        <div className="w-full bg-black bg-opacity-0">
-          <div className="flex gap-5 justify-between py-1 text-sm leading-none bg-black bg-opacity-0">
+      <div className="mt-4 ">
+        <div className="w-full">
+          <div className="flex gap-5 justify-between py-1 text-sm leading-none ">
             <div className="text-gray-600">Your Company</div>
             <div className="self-start font-semibold text-black">
               {yourValue}
@@ -26,8 +26,8 @@ const PeerComparisonMetricCard = ({
             />
           </div>
         </div>
-        <div className="mt-4 w-full bg-black bg-opacity-0">
-          <div className="flex gap-5 justify-between py-1 text-sm leading-none bg-black bg-opacity-0">
+        <div className="mt-4 w-full">
+          <div className="flex gap-5 justify-between py-1 text-sm leading-none ">
             <div className="text-gray-600">Industry Average</div>
             <div className="self-start font-semibold text-black">
               {industryValue}
