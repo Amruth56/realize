@@ -1,7 +1,7 @@
 "use client";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import IntegrationAssistantMessage from "@/components/integration/IntegrationAssistantMessage";
-import IntegrationFooter from "@/components/integration/IntegrationFooter";
 import IntegrationIntegrationCard from "@/components/integration/IntegrationIntegrationCard";
 import IntegrationPrivacySection from "@/components/integration/IntegrationPrivacySection";
 import IntegrationProgressIndicator from "@/components/integration/IntegrationProgressIndicator";
@@ -73,7 +73,7 @@ function IntegrationPage() {
               />
             </aside> */}
           </div>
-          <IntegrationFooter />
+          <Footer />
         </div>
       </div>
     </main>

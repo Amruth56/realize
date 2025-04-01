@@ -1,7 +1,7 @@
 "use client";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import ROIChartSection from "@/components/roidashboard/ROIChartSection";
-import ROIDashboardFooter from "@/components/roidashboard/ROIDashboardFooter";
 import ROIInsightCard from "@/components/roidashboard/ROIInsightCard";
 import ROIInvestmentTable from "@/components/roidashboard/ROIInvestmentTable";
 import ROIMetricCards from "@/components/roidashboard/ROIMetricCards";
@@ -49,7 +49,7 @@ function ROIDashboard() {
           </div>
         </div>
 
-        <ROIDashboardFooter />
+        <Footer />
       </div>
     </section>
   );

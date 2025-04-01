@@ -1,7 +1,7 @@
 "use client";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import PeerComparisonAIInsights from "@/components/peerComparision/PeerComparisionAIInsights";
-import PeerComparisonDashboardFooter from "@/components/peerComparision/PeerComparisionDashboardFooter";
 import PeerComparisonInvestmentBreakdown from "@/components/peerComparision/PeerComparisionInvestmentBreakdown";
 import PeerComparisonMetricCard from "@/components/peerComparision/PeerComparisionMetricCard";
 import PeerComparisonYearOverYearTrend from "@/components/peerComparision/PeerComparisionYearOverYearTrend";
@@ -91,7 +91,7 @@ const PeerComparisonDashboard = () => {
             /> */}
           </main>
 
-          <PeerComparisonDashboardFooter />
+          <Footer />
         </div>
       </div>
     </section>

@@ -1,9 +1,9 @@
 "use client";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import ValueRealizationAIInsightsCard from "@/components/valueRealization/ValueRealizationAIInsightsCard";
 import ValueRealizationDashboardHeader from "@/components/valueRealization/ValueRealizationDashboardHeader";
 import ValueRealizationFloatingActionButton from "@/components/valueRealization/ValueRealizationFloatingActionButton";
-import ValueRealizationFooter from "@/components/valueRealization/ValueRealizationFooter";
 import ValueRealizationMetricsGrid from "@/components/valueRealization/ValueRealizationMetricsGrid";
 import ValueRealizationROITrendsChart from "@/components/valueRealization/ValueRealizationROITrendsChart";
 import ValueRealizationStrategicRecommendations from "@/components/valueRealization/ValueRealizationStrategicRecommendations";
@@ -26,7 +26,7 @@ function ValueRealizationDashboard() {
         </div>
         <ValueRealizationStrategicRecommendations />
       </main>
-      <ValueRealizationFooter />
+      <Footer />
       <ValueRealizationFloatingActionButton />
     </div>
   );

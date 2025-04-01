@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import PurchaseInventoryAIInsights from "@/components/purchaseinventory/PurchaseInventoryAIInsights";
 import PurchaseInventoryChartSection from "@/components/purchaseinventory/PurchaseInventoryChartSection";
@@ -29,6 +30,7 @@ function PurchaseInventoryDashboard() {
           />
         </main>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

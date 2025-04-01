@@ -1,6 +1,6 @@
 "use client";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import OemFooter from "@/components/oem/OemFooter";
 import OemInfoBanner from "@/components/oem/OemInfoBanner";
 import OemIntegrationGrid from "@/components/oem/OemIntegrationGrid";
 import OemStatusBar from "@/components/oem/OemStatusBar";
@@ -16,7 +16,7 @@ const OEMIntegrations = () => {
           <OemInfoBanner />
           <OemIntegrationGrid />
           <OemStatusBar />
-          {/* <OemFooter /> */}
+          <Footer></Footer>
         </div>
       </main>
     </section>

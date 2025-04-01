@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/footer/Footer";
 import UtilizationAiInsights from "@/components/utilization/UtilizationAiInsights";
 import UtilizationFloatingButton from "@/components/utilization/UtilizationFloatingButton";
 import UtilizationHeader from "@/components/utilization/UtilizationHeader";
@@ -96,6 +97,7 @@ function UtilizationDashboard() {
           <UtilizationFloatingButton />
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

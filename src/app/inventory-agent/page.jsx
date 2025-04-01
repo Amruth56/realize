@@ -1,7 +1,7 @@
 "use client";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import InventoryDashboardCards from "@/components/inventoryAgent/InventoryDashboardCards";
-import InventoryFooter from "@/components/inventoryAgent/InventoryFooter";
 import InventoryInfoBanner from "@/components/inventoryAgent/InventoryInfoBanner";
 import React from "react";
 
@@ -15,7 +15,7 @@ function InventoryAgentOverview() {
       <Header />
       <InventoryInfoBanner />
       <InventoryDashboardCards />
-      <InventoryFooter />
+      <Footer />
     </main>
   );
 }

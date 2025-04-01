@@ -1,10 +1,10 @@
 "use client";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import RecentActivity from "@/components/systemStatus/ActivityItem";
 import AlertCategories from "@/components/systemStatus/AlertCategories";
 import EventLog from "@/components/systemStatus/EventLog";
 import StatusCards from "@/components/systemStatus/StatusCard";
-import StatusFooter from "@/components/systemStatus/StatusFooter";
 import StatusMonitor from "@/components/systemStatus/StatusMonitor";
 import StatusSystemHealthChart from "@/components/systemStatus/StatusSystemHealthChart";
 import React from "react";
@@ -38,7 +38,7 @@ function SystemStatusDashboard() {
 
           <EventLog />
         </section>
-        <StatusFooter />
+        <Footer />
       </main>
     </>
   );

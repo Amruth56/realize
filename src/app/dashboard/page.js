@@ -1,7 +1,7 @@
 "use client";
 import AgentGrid from "@/components/dashboard/AgentGrid";
 import AiBot from "@/components/dashboard/AiBot";
-import Footer from "@/components/dashboard/Footer";
+import Footer from "@/components/footer/Footer";
 import Pagination from "@/components/dashboard/Pagination";
 import SearchSection from "@/components/dashboard/SearchSection";
 import WelcomeSection from "@/components/dashboard/WelcomeSection";

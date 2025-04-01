@@ -1,8 +1,8 @@
 "use client";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import PurchaseAIReviewSection from "@/components/purchaseAssessment/PurchaseAIReviewSection";
 import PurchaseBeforeAfterMetricsSection from "@/components/purchaseAssessment/PurchaseBeforeAfterMetricsSection";
-import PurchaseFooter from "@/components/purchaseAssessment/PurchaseFooter";
 import PurchaseMetricsSection from "@/components/purchaseAssessment/PurchaseMetricsSection";
 import PurchaseSurveyInsightsSection from "@/components/purchaseAssessment/PurchaseSurveyInsightsSection";
 import React from "react";
@@ -39,7 +39,7 @@ function PurchaseAssessment() {
           <div className="flex flex-col justify-center items-end self-end px-16 py-0.5 max-w-full text-sm font-medium leading-none text-white rounded-xl bg-opacity-0 w-[286px] max-md:pl-5 max-md:mr-2.5">
             <div className="gap-3.5 w-[120px]">Integration Status</div>
           </div>
-          <PurchaseFooter />
+          <Footer />
         </div>
       </div>
     </article>

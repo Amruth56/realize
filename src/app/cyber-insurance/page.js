@@ -6,6 +6,7 @@ import CyberInsuranceFormField from "@/components/cyberInsurance/CyberInsuranceF
 import CyberInsuranceChatMessage from "@/components/cyberInsurance/CyberInsuranceChatMessage";
 import CyberInsuranceStepIndicator from "@/components/cyberInsurance/CyberInsuranceStepIndicator";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 const CyberInsuranceForm = () => {
   return (
@@ -146,6 +147,7 @@ const CyberInsuranceForm = () => {
           }
         />
       </section>
+      <Footer></Footer>
     </main>
   );
 };

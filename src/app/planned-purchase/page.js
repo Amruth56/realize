@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import PlannedPurchaseStatusIndicator from "@/components/plannedPurchase/PlannedPurchaseStatusIndicator";
-import PlannedPurchaseFooter from "@/components/plannedPurchase/PlannedPurchaseFooter";
 import PlannedPurchaseChatAvatar from "@/components/plannedPurchase/PlannedPurchaseChatAvatar";
 import PlannedPurchasePurchaseColumn from "@/components/plannedPurchase/PlannedPurchasePurchaseColumn";
 import PlannedPurchaseQuarterlyProgress from "@/components/plannedPurchase/PlannedPurchaseQuarterlyProgress";
 import PlannedPurchaseAIRecommendation from "@/components/plannedPurchase/PlannedPurchaseAIRecommendation";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 function PlannedPurchases() {
   // In Review purchases data
@@ -80,7 +80,7 @@ function PlannedPurchases() {
       </section>
 
       <PlannedPurchaseChatAvatar />
-      <PlannedPurchaseFooter />
+      <Footer />
       <PlannedPurchaseStatusIndicator />
     </main>
   );

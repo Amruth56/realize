@@ -1,5 +1,5 @@
 "use client";
-import Footer from "@/components/dashboard/Footer";
+import Footer from "@/components/footer/Footer";
 import SearchSection from "@/components/dashboard/SearchSection";
 import WelcomeSection from "@/components/dashboard/WelcomeSection";
 import AgentsGrid2 from "@/components/dashboard2/AgentsGrid2";

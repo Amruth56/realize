@@ -2,9 +2,9 @@
 import ImplementationTrackerImplementationTimeline from "@/components/ImplementationTrackerHeader.jsx/ImplementationTimeline";
 import ImplementationTrackerProfileSummary from "@/components/ImplementationTrackerHeader.jsx/ImplementationTrackerProfileSummary";
 import ImplementationTrackerProjectBoard from "@/components/ImplementationTrackerHeader.jsx/ImplementationTrackerProjectBoard";
-import ImplementationTrackerFooter from "@/components/ImplementationTrackerHeader.jsx/ImplementationTrackerFooter";
 import React from "react";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 
 function ImplementationTracker() {
@@ -28,7 +28,7 @@ function ImplementationTracker() {
         </section>
         <ImplementationTrackerProjectBoard />
         <ImplementationTrackerImplementationTimeline />
-        <ImplementationTrackerFooter />
+        <Footer />
       </main>
     </>
   );
