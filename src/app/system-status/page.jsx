@@ -1,10 +1,10 @@
 "use client";
+import Header from "@/components/header/Header";
 import RecentActivity from "@/components/systemStatus/ActivityItem";
 import AlertCategories from "@/components/systemStatus/AlertCategories";
 import EventLog from "@/components/systemStatus/EventLog";
 import StatusCards from "@/components/systemStatus/StatusCard";
 import StatusFooter from "@/components/systemStatus/StatusFooter";
-import StatusHeader from "@/components/systemStatus/StatusHeader";
 import StatusMonitor from "@/components/systemStatus/StatusMonitor";
 import StatusSystemHealthChart from "@/components/systemStatus/StatusSystemHealthChart";
 import React from "react";
@@ -18,7 +18,14 @@ function SystemStatusDashboard() {
         rel="stylesheet"
       />
       <main className="min-h-screen bg-white">
-        <StatusHeader />
+        <Header />
+            <div>
+              <h1 className="text-2xl font-semibold text-gray-800 m-2">
+              AI Appraisal Engine
+              </h1>
+            </div>
+           
+         
         <section className="px-20 py-8 bg-white max-md:p-4">
           <StatusMonitor />
           <StatusCards />
