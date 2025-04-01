@@ -66,15 +66,15 @@ function PlannedPurchases() {
 
       <section className="flex gap-6 p-6 mb-6 max-md:flex-col">
         <PlannedPurchasePurchaseColumn
-          title="In Review (3)"
+          title="In Review (2)"
           purchases={inReviewPurchases}
         />
         <PlannedPurchasePurchaseColumn
-          title="Approved (2)"
+          title="Approved (1)"
           purchases={approvedPurchases}
         />
         <PlannedPurchasePurchaseColumn
-          title="Scheduled (4)"
+          title="Scheduled (1)"
           purchases={scheduledPurchases}
         />
       </section>
