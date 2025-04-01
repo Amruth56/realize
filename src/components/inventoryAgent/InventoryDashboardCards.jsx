@@ -115,7 +115,7 @@ function InventoryDashboardCards() {
     <section className="flex flex-1 justify-center px-20 py-12 max-md:px-10 max-sm:px-5">
       <div className="grid grid-cols-3 gap-8 w-full max-w-screen-xl max-md:grid-cols-2 max-sm:grid-cols-1">
       <InventoryDashboardCard
-  icon={plannedPurchasesIcon}
+  icon={roiDashboardIcon}
   tags={plannedPurchasesTags}
   title="Planned Purchases"
   description="Schedule & Prioritize Tech Investments"
@@ -127,7 +127,7 @@ function InventoryDashboardCards() {
 />
 
 <InventoryDashboardCard
-  icon={purchaseInventoryIcon}
+  icon={roiDashboardIcon}
   tags={purchaseInventoryTags}
   title="Purchase Inventory"
   description="Analyze Spend & Vendor Activity"

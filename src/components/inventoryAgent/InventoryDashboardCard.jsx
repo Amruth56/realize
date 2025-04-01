@@ -21,10 +21,11 @@ function InventoryDashboardCard({
   };
 
   return (
-    <article className="flex flex-col p-6 bg-white rounded-xl shadow-md">
+    <article className="flex flex-col p-6 bg-white rounded-xl shadow-md h-full">
       <header className="flex justify-between items-center mb-4">
+      <div className="flex justify-between w-[100%]">
         <div>{icon}</div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 w-[100%] ml-auto justify-end">
           {tags.map((tag, index) => (
             <span
               key={index}
@@ -34,14 +35,14 @@ function InventoryDashboardCard({
             </span>
           ))}
         </div>
+        </div>
       </header>
-
       <h3 className="mb-2 text-xl text-black">{title}</h3>
       <p className="mb-4 text-base text-gray-600">{description}</p>
 
-      <div className="mb-6">{content}</div>
+      <div className="mb-6 flex-grow">{content}</div>
 
-      <div className="flex flex-col gap-3 mb-6">
+      <div className="mb-6">
         {stats.map((stat, index) => (
           <div key={index} className="flex justify-between items-center">
             <span className="text-base text-gray-600">{stat.label}</span>
@@ -50,12 +51,14 @@ function InventoryDashboardCard({
         ))}
       </div>
 
-      <button
-        className={`py-2.5 w-full text-base text-white ${buttonColor} rounded-lg`}
-        onClick={handleClick}
-      >
-        {buttonText}
-      </button>
+      <div className="mt-auto">
+        <button
+          className={`py-2.5 w-full text-base text-white ${buttonColor} rounded-lg`}
+          onClick={handleClick}
+        >
+          {buttonText}
+        </button>
+      </div>
     </article>
   );
 }
