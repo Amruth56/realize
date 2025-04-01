@@ -30,7 +30,7 @@ function PurchaseMetricsSection() {
   ];
 
   return (
-    <div className="p-0.5 mt-8  bg-opacity-0 max-md:max-w-full">
+    <div className="p-0.5 mt-8  max-md:max-w-full">
       <div className="flex gap-5 max-md:flex-col">
         {metrics.map((metric, index) => (
           <div key={index} className="w-[33%] max-md:ml-0 max-md:w-full">

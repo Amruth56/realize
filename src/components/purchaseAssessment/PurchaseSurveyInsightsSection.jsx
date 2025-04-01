@@ -21,14 +21,14 @@ function PurchaseSurveyInsightsSection() {
 
   return (
     <section className="grow px-6 pt-6 pb-24 w-full bg-white rounded-xl shadow-[0px_1px_2px_rgba(0,0,0,0.05)] max-md:px-5 max-md:mt-8 max-md:max-w-full">
-      <h3 className="pt-0.5 pb-2.5 text-lg text-gray-800 bg-black bg-opacity-0 max-md:pr-5 max-md:max-w-full">
+      <h3 className="pt-0.5 pb-2.5 text-lg text-gray-800 max-md:pr-5 max-md:max-w-full">
         Survey Insights
       </h3>
-      <div className="mt-6 w-full text-base leading-none text-gray-600 bg-black bg-opacity-0 max-md:max-w-full">
+      <div className="mt-6 w-full text-base leading-none text-gray-600 max-md:max-w-full">
         {surveyItems.map((item, index) => (
           <div
             key={index}
-            className={`flex flex-wrap gap-5 justify-between py-1 bg-black bg-opacity-0 max-md:max-w-full ${index > 0 ? "mt-4" : ""}`}
+            className={`flex flex-wrap gap-5 justify-between py-1 max-md:max-w-full ${index > 0 ? "mt-4" : ""}`}
           >
             <div>{item.label}</div>
             <img

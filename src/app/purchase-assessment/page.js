@@ -1,8 +1,8 @@
 "use client";
+import Header from "@/components/header/Header";
 import PurchaseAIReviewSection from "@/components/purchaseAssessment/PurchaseAIReviewSection";
 import PurchaseBeforeAfterMetricsSection from "@/components/purchaseAssessment/PurchaseBeforeAfterMetricsSection";
 import PurchaseFooter from "@/components/purchaseAssessment/PurchaseFooter";
-import PurchaseHeader from "@/components/purchaseAssessment/PurchaseHeader";
 import PurchaseMetricsSection from "@/components/purchaseAssessment/PurchaseMetricsSection";
 import PurchaseSurveyInsightsSection from "@/components/purchaseAssessment/PurchaseSurveyInsightsSection";
 import React from "react";
@@ -13,7 +13,10 @@ function PurchaseAssessment() {
     <article className="overflow-hidden bg-white rounded-lg border-2 border-gray-300 border-solid">
       <div className="w-full  bg-opacity-0 max-md:max-w-full">
         <section className="pb-16 w-full bg-gray-50 max-md:max-w-full">
-          <PurchaseHeader />
+          <Header />
+          <div>
+        <h1 className="text-2xl font-semibold text-gray-800 m-2"> Purchase Assessment</h1>
+      </div>
           <div className="flex flex-col px-20 w-full max-md:px-5 max-md:max-w-full">
             <main className="px-6 py-8 mr-8 bg-opacity-0 max-md:px-5 max-md:mr-2.5 max-md:max-w-full">
               <PurchaseAIReviewSection />
@@ -29,11 +32,7 @@ function PurchaseAssessment() {
                 </div>
               </div>
             </main>
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/8f286a89216d48f19ceeeaf7437e58bd/4c3a8c0464b7c9354e93ec5e89b2fabf76373474?placeholderIfAbsent=true"
-              className="object-contain self-end w-20 rounded-full aspect-square mt-[571px] max-md:mt-10"
-              alt="Profile avatar"
-            />
+            
           </div>
         </section>
         <div className="flex flex-col py-px w-full rounded-none max-md:max-w-full">

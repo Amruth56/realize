@@ -3,11 +3,11 @@ import React from "react";
 function PurchaseMetricComparison({ label, before, after, progressWidth, isLast }) {
   return (
     <div
-      className={`${!isLast ? "mb-6" : ""} w-full bg-black bg-opacity-0 max-md:max-w-full`}
+      className={`${!isLast ? "mb-6" : ""} w-full  max-md:max-w-full`}
     >
-      <div className="flex flex-wrap gap-5 justify-between w-full text-base leading-none bg-black bg-opacity-0 max-md:max-w-full">
+      <div className="flex flex-wrap gap-5 justify-between w-full text-base leading-none  max-md:max-w-full">
         <div className="text-gray-600">{label}</div>
-        <div className="flex gap-2 items-start pt-0.5 pb-3 bg-black bg-opacity-0">
+        <div className="flex gap-2 items-start pt-0.5 pb-3 ">
           <div className="text-gray-400 line-through">{before}</div>
           <div className="text-emerald-600">{after}</div>
         </div>
