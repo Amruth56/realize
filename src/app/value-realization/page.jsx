@@ -1,10 +1,9 @@
 "use client";
+import Header from "@/components/header/Header";
 import ValueRealizationAIInsightsCard from "@/components/valueRealization/ValueRealizationAIInsightsCard";
 import ValueRealizationDashboardHeader from "@/components/valueRealization/ValueRealizationDashboardHeader";
 import ValueRealizationFloatingActionButton from "@/components/valueRealization/ValueRealizationFloatingActionButton";
 import ValueRealizationFooter from "@/components/valueRealization/ValueRealizationFooter";
-import ValueRealizationHeader from "@/components/valueRealization/ValueRealizationHeader";
-import ValueRealizationIntegrationStatus from "@/components/valueRealization/ValueRealizationIntegrationStatus";
 import ValueRealizationMetricsGrid from "@/components/valueRealization/ValueRealizationMetricsGrid";
 import ValueRealizationROITrendsChart from "@/components/valueRealization/ValueRealizationROITrendsChart";
 import ValueRealizationStrategicRecommendations from "@/components/valueRealization/ValueRealizationStrategicRecommendations";
@@ -15,7 +14,8 @@ import React from "react";
 function ValueRealizationDashboard() {
   return (
     <div className="flex flex-col bg-gray-50 min-h-[screen]">
-      <ValueRealizationHeader/>
+      <Header/>
+          
       <main className="flex-1 p-8 mx-auto max-w-screen-xl max-md:px-4">
         <ValueRealizationDashboardHeader />
         <ValueRealizationAIInsightsCard />
@@ -27,7 +27,6 @@ function ValueRealizationDashboard() {
         <ValueRealizationStrategicRecommendations />
       </main>
       <ValueRealizationFooter />
-      <ValueRealizationIntegrationStatus />
       <ValueRealizationFloatingActionButton />
     </div>
   );
