@@ -5,12 +5,12 @@ import CyberInsuranceButton from "@/components/cyberInsurance/CyberInsuranceForm
 import CyberInsuranceFormField from "@/components/cyberInsurance/CyberInsuranceFormField";
 import CyberInsuranceChatMessage from "@/components/cyberInsurance/CyberInsuranceChatMessage";
 import CyberInsuranceStepIndicator from "@/components/cyberInsurance/CyberInsuranceStepIndicator";
-import CyberInsuranceHeader from "@/components/cyberInsurance/CyberInsuranceHeader";
+import Header from "@/components/header/Header";
 
 const CyberInsuranceForm = () => {
   return (
     <main className="w-full bg-gray-50 min-h-screen">
-      <CyberInsuranceHeader />
+      <Header />
 
       <section className="px-4 py-8 mx-auto max-w-screen-xl">
         <div className="flex justify-center">
@@ -60,7 +60,7 @@ const CyberInsuranceForm = () => {
         </div>
       </section>
 
-      <section className="flex flex-wrap gap-6 justify-center px-4 mx-auto mt-8 max-w-[992px]">
+      <section className="flex  gap-6 justify-center px-4 mx-auto mt-8 max-w-[992px]">
         <CyberInsuranceStatCard
           title="Coverage Score"
           value="72%"
