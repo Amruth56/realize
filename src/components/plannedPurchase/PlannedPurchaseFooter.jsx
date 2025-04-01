@@ -2,7 +2,7 @@ import React from "react";
 
 function PlannedPurchaseFooter() {
   return (
-    <footer className="px-20 py-8 bg-white border-t border-solid max-sm:p-4">
+    <footer className="px-20 py-8 bg-white max-sm:p-4">
       <div className="flex justify-between items-center mx-auto my-0 max-w-screen-xl max-sm:flex-col max-sm:gap-4 max-sm:text-center">
         <p className="text-sm text-gray-600">
           © 2025 Realize. All rights reserved.

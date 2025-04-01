@@ -6,8 +6,7 @@ import PlannedPurchaseChatAvatar from "@/components/plannedPurchase/PlannedPurch
 import PlannedPurchasePurchaseColumn from "@/components/plannedPurchase/PlannedPurchasePurchaseColumn";
 import PlannedPurchaseQuarterlyProgress from "@/components/plannedPurchase/PlannedPurchaseQuarterlyProgress";
 import PlannedPurchaseAIRecommendation from "@/components/plannedPurchase/PlannedPurchaseAIRecommendation";
-import PlannedPurchaseHeader from "@/components/plannedPurchase/PlannedPurchaseHeader";
-
+import Header from "@/components/header/Header";
 
 function PlannedPurchases() {
   // In Review purchases data
@@ -20,7 +19,7 @@ function PlannedPurchases() {
       amount: "$12,000",
       priority: "Priority: High",
     },
-    
+
     {
       status: "In Review",
       dueDate: "Due Q2",
@@ -57,14 +56,27 @@ function PlannedPurchases() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <PlannedPurchaseHeader />
+      <Header />
+      <div>
+        <h1 className="text-2xl font-semibold text-gray-800 m-2">Planned Purchase</h1>
+      </div>
+
       <PlannedPurchaseAIRecommendation />
       <PlannedPurchaseQuarterlyProgress />
 
       <section className="flex gap-6 p-6 mb-6 max-md:flex-col">
-        <PlannedPurchasePurchaseColumn title="In Review (3)" purchases={inReviewPurchases} />
-        <PlannedPurchasePurchaseColumn title="Approved (2)" purchases={approvedPurchases} />
-        <PlannedPurchasePurchaseColumn title="Scheduled (4)" purchases={scheduledPurchases} />
+        <PlannedPurchasePurchaseColumn
+          title="In Review (3)"
+          purchases={inReviewPurchases}
+        />
+        <PlannedPurchasePurchaseColumn
+          title="Approved (2)"
+          purchases={approvedPurchases}
+        />
+        <PlannedPurchasePurchaseColumn
+          title="Scheduled (4)"
+          purchases={scheduledPurchases}
+        />
       </section>
 
       <PlannedPurchaseChatAvatar />
