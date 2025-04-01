@@ -3,7 +3,7 @@ import PurchaseInventoryFilterItem from "./PurchaseInventoryFilterItem";
 
 function PurchaseInventoryFilterControls() {
   return (
-    <section className="p-0.5 mt-8 bg-black bg-opacity-0 max-md:max-w-full">
+    <section className="p-0.5 mt-8  max-md:max-w-full">
       <div className="flex gap-5 max-md:flex-col">
         <div className="w-3/12 max-md:ml-0 max-md:w-full">
           <PurchaseInventoryFilterItem label="Segment" value="All Segments" />
