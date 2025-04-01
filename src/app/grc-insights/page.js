@@ -1,18 +1,36 @@
 "use client";
 import React from "react";
 
-import GrcDashboardHeader from "@/components/grcInsights/GrcDashboardHeader"
-import GrcMetricsCard from "@/components/grcInsights/GrcMetricsCard"
-import GrcCategoryCard from "@/components/grcInsights/GrcCategoryCard"
+import GrcMetricsCard from "@/components/grcInsights/GrcMetricsCard";
+import GrcCategoryCard from "@/components/grcInsights/GrcCategoryCard";
 import GrcActivityFeed from "@/components/grcInsights/GrcActivityItem";
-
+import Header from "@/components/header/Header";
 
 function GRCInsightsDashboard() {
   return (
     <section className="overflow-hidden bg-white rounded-lg border-2 border-gray-300 border-solid">
       <div className="w-full bg-opacity-0">
         <div className="pb-32 w-full bg-slate-50 max-md:pb-24 max-md:max-w-full">
-          <GrcDashboardHeader />
+          <Header />
+          <div className="flex justify-between items-center m-6">
+            <div>
+              <h1 className="text-2xl font-semibold text-gray-800">
+                GRC Insights
+              </h1>
+            </div>
+            <div className="flex gap-6 items-center">
+              <ul className="list-none m-0 p-0">
+                <li>
+                  <span className="text-sm text-gray-600 cursor-pointer hover:text-blue-600 transition">
+                    Export Report
+                  </span>
+                </li>
+              </ul>
+              <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 cursor-pointer">
+                Refresh
+              </button>
+            </div>
+          </div>
 
           <main className="flex flex-col px-20 mb-0 w-full max-md:px-5 max-md:mb-2.5 max-md:max-w-full">
             <div className="px-6 py-8 w-full bg-opacity-0 max-md:px-5 max-md:max-w-full">
@@ -159,6 +177,5 @@ function GRCInsightsDashboard() {
     </section>
   );
 }
-
 
 export default GRCInsightsDashboard;

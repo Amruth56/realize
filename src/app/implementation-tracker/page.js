@@ -1,10 +1,10 @@
 "use client";
 import ImplementationTrackerImplementationTimeline from "@/components/ImplementationTrackerHeader.jsx/ImplementationTimeline";
-import ImplementationTrackerHeader from "@/components/ImplementationTrackerHeader.jsx/ImplementationTrackerHeader";
 import ImplementationTrackerProfileSummary from "@/components/ImplementationTrackerHeader.jsx/ImplementationTrackerProfileSummary";
 import ImplementationTrackerProjectBoard from "@/components/ImplementationTrackerHeader.jsx/ImplementationTrackerProjectBoard";
 import ImplementationTrackerFooter from "@/components/ImplementationTrackerHeader.jsx/ImplementationTrackerFooter";
 import React from "react";
+import Header from "@/components/header/Header";
 
 
 function ImplementationTracker() {
@@ -15,7 +15,14 @@ function ImplementationTracker() {
         rel="stylesheet"
       />
       <main className="min-h-screen bg-gray-50">
-        <ImplementationTrackerHeader />
+        <Header />
+
+        <div>
+              <h1 className="text-2xl font-semibold text-gray-800 m-2">
+                Implementation Tracker
+              </h1>
+            </div>
+
         <section className="px-20 py-6 max-md:p-6 max-sm:p-4">
           <ImplementationTrackerProfileSummary />
         </section>

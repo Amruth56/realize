@@ -1,19 +1,22 @@
 "use client";
 import Image from "next/image";
+import {useRouter} from 'next/navigation'
 
 const Header = () => {
+  const router = useRouter();
   return (
     <nav className="flex items-center justify-between w-full px-4 py-2 h-[80px] bg-white">
-      <div>
+      <div className="cursor-pointer">
         <Image
           src="/realizelogo.png"
           width={150}
           height={150}
           alt="Realize Logo"
+          onClick={()=>router.push('/dashboard')}
         />
       </div>
       <div className="flex gap-6 items-center max-sm:hidden mr-10">
-      <a href="/listofpages" className="text-base text-gray-600 cursor-pointer">
+      <a href="/listofpages" className="text-base text-gray-600 cursor-pointer hover:text-blue-500">
             List of Pages
           </a>
           <a href="#" className="text-base text-gray-600 cursor-pointer">
