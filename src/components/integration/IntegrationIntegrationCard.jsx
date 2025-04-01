@@ -45,7 +45,7 @@ function IntegrationIntegrationCard({
       </p>
       <button
         onClick={handleConnect}
-        className={`px-16 pt-2.5 pb-5 mt-4 text-base text-center rounded-lg max-md:px-5 max-md:max-w-full ${
+        className={`bg-blue-600 flex justify-center max-md:max-w-full max-md:px-5 mt-4 px-16 py-2 rounded-lg text-base text-center text-white w-[100%] ${
           recommended
             ? "text-white bg-blue-600"
             : "text-gray-700 bg-white border border-gray-300 border-solid"

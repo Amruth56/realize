@@ -1,7 +1,7 @@
 "use client";
+import Header from "@/components/header/Header";
 import IntegrationAssistantMessage from "@/components/integration/IntegrationAssistantMessage";
 import IntegrationFooter from "@/components/integration/IntegrationFooter";
-import IntegrationHeader from "@/components/integration/IntegrationHeader";
 import IntegrationIntegrationCard from "@/components/integration/IntegrationIntegrationCard";
 import IntegrationPrivacySection from "@/components/integration/IntegrationPrivacySection";
 import IntegrationProgressIndicator from "@/components/integration/IntegrationProgressIndicator";
@@ -13,7 +13,13 @@ function IntegrationPage() {
     <main className="overflow-hidden bg-white rounded-lg border-2 border-gray-300 border-solid">
       <div className="w-full bg-opacity-0">
         <div className="w-full bg-gray-50">
-          <IntegrationHeader />
+          <Header />
+
+          <div>
+              <h1 className="text-2xl font-semibold text-gray-800 m-2">
+                Integration
+              </h1>
+            </div>
           <div className="flex mr-6 ml-5 max-md:mr-2.5">
             <img
               src="https://cdn.builder.io/api/v1/image/assets/8f286a89216d48f19ceeeaf7437e58bd/253267076ef97d426eba5807917a93781543f5ed?placeholderIfAbsent=true"
@@ -36,7 +42,7 @@ function IntegrationPage() {
                 <IntegrationProgressIndicator />
 
                 <div className="mt-1 bg-opacity-0 max-md:max-w-full" space={24}>
-                  <div className="flex gap-5 max-md:flex-col">
+                  <div className="flex gap-5 justify-center max-md:flex-col">
                     <div className="w-6/12 max-md:ml-0 max-md:w-full">
                       <IntegrationIntegrationCard
                         type="microsoft"
@@ -47,23 +53,14 @@ function IntegrationPage() {
                         imageSrc="https://cdn.builder.io/api/v1/image/assets/8f286a89216d48f19ceeeaf7437e58bd/847e90f8d280c84a76f52ea71f1b84400cb8fe39?placeholderIfAbsent=true"
                       />
                     </div>
-                    <div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-                      <IntegrationIntegrationCard
-                        type="oem"
-                        title="OEM Integration"
-                        description="Link your OEM systems for comprehensive equipment monitoring and maintenance insights."
-                        buttonText="Connect with OEM"
-                        recommended={false}
-                        imageSrc="https://cdn.builder.io/api/v1/image/assets/8f286a89216d48f19ceeeaf7437e58bd/c6142f499328cadf867704e02622426d53b1f5b1?placeholderIfAbsent=true"
-                      />
-                    </div>
+                    
                   </div>
                 </div>
 
                 <IntegrationPrivacySection />
               </div>
             </section>
-            <aside className="self-start mt-96 max-md:mt-10">
+            {/* <aside className="self-start mt-96 max-md:mt-10">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/8f286a89216d48f19ceeeaf7437e58bd/b58f93941a5e874cd79482c78a349940bb1c6c46?placeholderIfAbsent=true"
                 className="object-contain ml-4 aspect-[1.51] w-[68px] max-md:ml-2.5"
@@ -74,7 +71,7 @@ function IntegrationPage() {
                 className="object-contain mt-80 w-20 rounded-full aspect-square max-md:mt-10 max-md:mr-1"
                 alt="Decorative element"
               />
-            </aside>
+            </aside> */}
           </div>
           <IntegrationFooter />
         </div>
