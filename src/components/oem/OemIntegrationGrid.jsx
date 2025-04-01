@@ -62,7 +62,7 @@ const OemIntegrationGrid = () => {
   ];
 
   return (
-    <section className="p-0.5 mx-6 mt-8 bg-black bg-opacity-0 max-md:mr-2.5 max-md:max-w-full">
+    <section className="p-0.5 mx-6 mt-8 bg-opacity-0 max-md:mr-2.5 max-md:max-w-full">
       <div className="max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col">
           {integrations.slice(0, 3).map((integration) => (

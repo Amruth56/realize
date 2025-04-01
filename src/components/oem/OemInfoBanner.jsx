@@ -8,7 +8,7 @@ const OemInfoBanner = () => {
         alt="Information icon"
         className="object-contain shrink-0 w-12 rounded-full aspect-square"
       />
-      <p className="py-1 my-auto bg-black bg-opacity-0 max-md:max-w-full">
+      <p className="py-1 my-auto bg-opacity-0 max-md:max-w-full">
         Click on any integration tile to view detailed connection information or
         manage consent settings.
       </p>
