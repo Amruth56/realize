@@ -27,11 +27,11 @@ function UtilizationOptimizationRecommendations() {
 
   return (
     <article className="grow px-6 pt-6 pb-28 w-full bg-white rounded-xl shadow-[0px_1px_2px_rgba(0,0,0,0.05)] max-md:px-5 max-md:pb-24 max-md:mt-8 max-md:max-w-full">
-      <h3 className="py-1.5 text-lg font-semibold text-gray-800 bg-black bg-opacity-0 max-md:pr-5 max-md:max-w-full">
+      <h3 className="py-1.5 text-lg font-semibold text-gray-800 max-md:pr-5 max-md:max-w-full">
         Optimization Recommendations
       </h3>
 
-      <div className="mt-4 w-full text-sm text-gray-700 bg-black bg-opacity-0 max-md:max-w-full">
+      <div className="mt-4 w-full text-sm text-gray-700 max-md:max-w-full">
         {recommendations.map((recommendation, index) => (
           <div
             key={recommendation.id}
@@ -42,7 +42,7 @@ function UtilizationOptimizationRecommendations() {
               alt="Recommendation icon"
               className={`object-contain shrink-0 self-start mt-1 ${recommendation.iconSrc.includes("https://cdn.builder.io/api/v1/image/assets/8f286a89216d48f19ceeeaf7437e58bd/257aab310350633ffdc8e92659fdc528d0e0d9a9?placeholderIfAbsent=true") ? "w-3 aspect-[0.75]" : "w-4 aspect-square"}`}
             />
-            <p className="grow shrink-0 py-1 basis-0 bg-black bg-opacity-0 w-fit">
+            <p className="grow shrink-0 py-1 basis-0  w-fit">
               {recommendation.text}
             </p>
           </div>

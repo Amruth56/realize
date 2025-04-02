@@ -10,16 +10,16 @@ function UtilizationTrends() {
 
   return (
     <article className="grow p-6 w-full bg-white rounded-xl shadow-[0px_1px_2px_rgba(0,0,0,0.05)] max-md:px-5 max-md:mt-8 max-md:max-w-full">
-      <h3 className="pt-1 pb-3 text-lg font-semibold text-gray-800 bg-black bg-opacity-0 max-md:pr-5 max-md:max-w-full">
+      <h3 className="pt-1 pb-3 text-lg font-semibold text-gray-800 max-md:pr-5 max-md:max-w-full">
         Utilization Trends
       </h3>
 
       <div className="flex flex-col justify-center p-4 mt-4 bg-gray-50 rounded-lg max-md:max-w-full">
-        <div className="w-full bg-black bg-opacity-0 max-md:max-w-full">
+        <div className="w-full max-md:max-w-full">
           {quarters.map((quarter, index) => (
             <div
               key={quarter.id}
-              className={`flex flex-wrap gap-5 justify-between items-start py-1 bg-black bg-opacity-0 max-md:max-w-full ${
+              className={`flex flex-wrap gap-5 justify-between items-start py-1  max-md:max-w-full ${
                 index > 0 ? "mt-12 max-md:mt-10" : ""
               }`}
             >

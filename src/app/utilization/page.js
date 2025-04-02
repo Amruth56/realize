@@ -1,25 +1,24 @@
 "use client";
 import Footer from "@/resuable/footer/Footer";
 import UtilizationAiInsights from "@/components/utilization/UtilizationAiInsights";
-import UtilizationFloatingButton from "@/components/utilization/UtilizationFloatingButton";
-import UtilizationHeader from "@/components/utilization/UtilizationHeader";
 import UtilizationMetricCard from "@/components/utilization/UtilizationMetricCard";
 import UtilizationOptimizationRecommendations from "@/components/utilization/UtilizationOptimizationRecommendations";
 import UtilizationTrends from "@/components/utilization/UtilizationTrends";
 import React from "react";
+import Header from "@/resuable/header/Header";
 
 
 function UtilizationDashboard() {
   return (
-    <div className="bg-black bg-opacity-0">
+    <div className="">
       <div className="flex flex-col pb-96 w-full bg-gray-50 max-md:pb-24 max-md:max-w-full">
-        <UtilizationHeader />
-        <div className="flex items-start self-end mr-7 mb-0 max-md:mr-2.5 max-md:mb-2.5">
-          <main className="grow shrink-0 self-start px-6 py-8 mr-0 basis-0 bg-black bg-opacity-0 w-fit max-md:px-5 max-md:max-w-full">
+        <Header />
+        <div className="flex items-start mr-7 mb-0 max-md:mr-2.5 max-md:mb-2.5">
+          <main className="grow shrink-0 self-start px-6 py-8 mr-0 basis-0  w-fit max-md:px-5 max-md:max-w-full">
             <UtilizationAiInsights/>
 
             <section
-              className="p-0.5 mt-8 bg-black bg-opacity-0 max-md:max-w-full"
+              className="p-0.5 mt-8 max-md:max-w-full"
               space={32}
             >
               <div className="flex gap-5 max-md:flex-col">
@@ -81,7 +80,7 @@ function UtilizationDashboard() {
             </section>
 
             <section
-              className="p-0.5 mt-7 bg-black bg-opacity-0 max-md:max-w-full"
+              className="p-0.5 mt-7 max-md:max-w-full"
               space={32}
             >
               <div className="flex gap-5 max-md:flex-col">
@@ -94,7 +93,6 @@ function UtilizationDashboard() {
               </div>
             </section>
           </main>
-          <UtilizationFloatingButton />
         </div>
       </div>
       <Footer></Footer>

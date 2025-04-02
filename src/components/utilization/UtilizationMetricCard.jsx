@@ -10,7 +10,7 @@ function UtilizationMetricCard({
 }) {
   return (
     <article className="p-6 mx-auto w-full bg-white rounded-xl shadow-[0px_1px_2px_rgba(0,0,0,0.05)] max-md:px-5 max-md:mt-8">
-      <div className="flex gap-3 py-0.5 w-full bg-black bg-opacity-0">
+      <div className="flex gap-3 py-0.5 w-full">
         <div className="flex overflow-hidden justify-center items-center min-h-6">
           <img
             src={iconSrc}
@@ -23,9 +23,9 @@ function UtilizationMetricCard({
         </h2>
       </div>
 
-      <div className="mt-6 bg-black bg-opacity-0">
+      <div className="mt-6">
         <div className="p-4 w-full bg-gray-50 rounded-lg">
-          <div className="flex gap-5 justify-between pt-0.5 pb-2.5 text-base leading-none bg-black bg-opacity-0">
+          <div className="flex gap-5 justify-between pt-0.5 pb-2.5 text-base leading-none ">
             <p className="text-gray-600">{mainMetric.label}</p>
             <p className={`self-start font-semibold ${mainMetric.color}`}>
               {mainMetric.value}
@@ -38,11 +38,11 @@ function UtilizationMetricCard({
           </div>
         </div>
 
-        <div className="mt-4 w-full text-base leading-none whitespace-nowrap bg-black bg-opacity-0">
+        <div className="mt-4 w-full text-base leading-none whitespace-nowrap">
           {subMetrics.map((metric, index) => (
             <div
               key={index}
-              className={`flex gap-5 justify-between py-1.5 ${index > 0 ? "mt-3" : ""} bg-black bg-opacity-0`}
+              className={`flex gap-5 justify-between py-1.5 ${index > 0 ? "mt-3" : ""}`}
             >
               <p className="text-gray-600">{metric.label}</p>
               <p className="self-start text-gray-800">{metric.value}</p>

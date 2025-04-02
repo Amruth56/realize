@@ -1,10 +1,13 @@
+"use client";
+
 import React from "react";
 
 const AgentCard = ({ agent }) => {
-  const { name, description, category, imageUrl } = agent;
+  // Safely destructure with optional chaining
+  const { name, description, category, imageUrl } = agent || {};
 
   return (
-    <article className="flex gap-4 p-6 bg-white rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+    <article className="flex gap-4 p-6 bg-white rounded-xl shadow-md h-full">
       <img
         src={imageUrl}
         alt={`${name} icon`}

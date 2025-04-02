@@ -1,5 +1,5 @@
+import AgentCard from "@/resuable/agentCard/AgentCard";
 import React from "react";
-import AgentCard from "./AgentCard";
 
 const AgentGrid = () => {
   const agents = [

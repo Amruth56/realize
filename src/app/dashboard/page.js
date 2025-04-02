@@ -2,11 +2,11 @@
 import AgentGrid from "@/components/dashboard/AgentGrid";
 import AiBot from "@/components/dashboard/AiBot";
 import Footer from "@/resuable/footer/Footer";
-import Pagination from "@/components/dashboard/Pagination";
 import SearchSection from "@/components/dashboard/SearchSection";
 import WelcomeSection from "@/components/dashboard/WelcomeSection";
 import Header from "@/resuable/header/Header";
 import * as React from "react";
+import AgentCard from "@/resuable/agentCard/AgentCard";
 
 function InputDesign() {
   return (
@@ -21,7 +21,6 @@ function InputDesign() {
           <WelcomeSection />
           <SearchSection />
           <AgentGrid />
-          <Pagination />
         </main>
         <AiBot />
         <Footer />
