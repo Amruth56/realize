@@ -17,6 +17,8 @@ const CategoryFilters = () => {
   const handleClick = (category) => {
     if (category === "Analytics") {
       router.push("/dashboard2");
+    } if(category == "All Agents"){
+      router.push("/dashboard")
     } else {
       // Handle other categories if needed
       console.log(`Selected category: ${category}`);
@@ -29,7 +31,7 @@ const CategoryFilters = () => {
         <button
           key={index}
           onClick={() => handleClick(category)}
-          className="px-4 py-3 text-base text-gray-700 rounded-full border border-solid cursor-pointer"
+          className="px-4 py-3 text-base text-gray-700 rounded-full border border-solid cursor-pointer hover:bg-blue-200 w-32"
         >
           {category}
         </button>
