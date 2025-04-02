@@ -4,9 +4,9 @@ import Header from "@/resuable/header/Header";
 import ROIChartSection from "@/components/roidashboard/ROIChartSection";
 import ROIInsightCard from "@/components/roidashboard/ROIInsightCard";
 import ROIInvestmentTable from "@/components/roidashboard/ROIInvestmentTable";
-import ROIMetricCards from "@/components/roidashboard/ROIMetricCards";
 import React from "react";
-
+import OverViewCard from "@/resuable/overViewCard/OverViewCard";
+import { FaUsers, FaDollarSign, FaClipboardList } from "react-icons/fa";
 
 function ROIDashboard() {
   return (
@@ -36,14 +36,26 @@ function ROIDashboard() {
 
           <main className="self-center py-7 pl-6 w-full max-w-screen-xl max-md:pl-5 max-md:max-w-full">
             <ROIInsightCard />
-            <ROIMetricCards />
+            <div className="flex gap-4 my-4 justify-center">
+              <OverViewCard
+                title="Average ROI"
+                value="150%"
+                percentage="⬆️ 12%"
+              />
+              <OverViewCard title="Total Investment" value="$2.4M" />
+              <OverViewCard
+                title="Total Returns"
+                value="$6M"
+                percentage="⬆️ 25%"
+              />
+              <OverViewCard title="Active Investments" value="12" />
+            </div>
             <ROIChartSection />
             <ROIInvestmentTable />
           </main>
         </div>
 
         <div className="flex flex-col mt-7 max-w-full text-sm font-medium leading-none text-white w-[286px] max-md:mr-2.5">
-          
           <div className="flex flex-col justify-center items-end px-7 py-0.5 mt-8 w-full rounded-xl max-md:pl-5">
             <div className="gap-3.5 w-[120px]">Integration Status</div>
           </div>

@@ -4,8 +4,10 @@ import Header from "@/resuable/header/Header";
 import PurchaseInventoryAIInsights from "@/components/purchaseinventory/PurchaseInventoryAIInsights";
 import PurchaseInventoryChartSection from "@/components/purchaseinventory/PurchaseInventoryChartSection";
 import PurchaseInventoryFilterControls from "@/components/purchaseinventory/PurchaseInventoryFilterControls";
-import PurchaseInventoryMetricsCards from "@/components/purchaseinventory/PurchaseInventoryMetricsCards";
 import React from "react";
+
+import OverViewCard from "@/resuable/overViewCard/OverViewCard";
+import { FaDollarSign, FaKey, FaBuilding, FaClock } from "react-icons/fa";
 
 
 function PurchaseInventoryDashboard() {
@@ -20,7 +22,32 @@ function PurchaseInventoryDashboard() {
           <div className="grow shrink-0 basis-0 w-fit max-md:max-w-full">
             <PurchaseInventoryAIInsights />
             <PurchaseInventoryFilterControls />
-            <PurchaseInventoryMetricsCards />
+            <div className= "flex gap-4 my-4 justify-center">
+          <OverViewCard
+            title="Total Spend"
+            value="2,322"
+            percentage="+12% from last week"
+            icon={<FaDollarSign />}
+          />
+          <OverViewCard
+            title="Active Licenses"
+            value="$84,232"
+            percentage="+8% from last month"
+            icon={<FaKey />}
+          />
+          <OverViewCard
+            title="Vendores"
+            value="16"
+            percentage="4 in progress"
+            icon={<FaBuilding />}
+          />
+          <OverViewCard
+          title="Renewal Due"
+          value="14"
+          percentage="In next 30 days"
+          icon ={<FaClock/>}
+          />
+          </div>
             <PurchaseInventoryChartSection />
           </div>
           <img

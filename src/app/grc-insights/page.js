@@ -1,11 +1,13 @@
 "use client";
 import React from "react";
 
-import GrcMetricsCard from "@/components/grcInsights/GrcMetricsCard";
 import GrcCategoryCard from "@/components/grcInsights/GrcCategoryCard";
 import GrcActivityFeed from "@/components/grcInsights/GrcActivityItem";
 import Header from "@/resuable/header/Header";
 import Footer from "@/resuable/footer/Footer";
+import OverViewCard from "@/resuable/overViewCard/OverViewCard";
+import { FaClock, FaFile } from "react-icons/fa";
+
 
 function GRCInsightsDashboard() {
   return (
@@ -36,34 +38,26 @@ function GRCInsightsDashboard() {
           <main className="flex flex-col px-20 mb-0 w-full max-md:px-5 max-md:mb-2.5 max-md:max-w-full">
             <div className="px-6 py-8 w-full bg-opacity-0 max-md:px-5 max-md:max-w-full">
               {/* Top Metrics Section */}
-              <section className="p-0.5 bg-opacity-0 max-md:max-w-full">
-                <div className="flex gap-5 max-md:flex-col">
-                  <div className="w-[33%] max-md:ml-0 max-md:w-full">
-                    <GrcMetricsCard
-                      title="Overall Health"
-                      value="94%"
-                      description="Across all GRC metrics"
-                      iconSrc="https://cdn.builder.io/api/v1/image/assets/8f286a89216d48f19ceeeaf7437e58bd/c71a301ea1bd0c2538b057e3c28b32635f97f1ee?placeholderIfAbsent=true"
-                    />
-                  </div>
-                  <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-                    <GrcMetricsCard
-                      title="Active Policies"
-                      value="127"
-                      description="Updated in last 30 days"
-                      iconSrc="https://cdn.builder.io/api/v1/image/assets/8f286a89216d48f19ceeeaf7437e58bd/bbacb98a970d15bdd397ab9f305c448bcd21656c?placeholderIfAbsent=true"
-                    />
-                  </div>
-                  <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-                    <GrcMetricsCard
-                      title="Open Issues"
-                      value="7"
-                      description="Requiring attention"
-                      iconSrc="https://cdn.builder.io/api/v1/image/assets/8f286a89216d48f19ceeeaf7437e58bd/24d002799f0cf650737aaf1c4a452cf6f3db5535?placeholderIfAbsent=true"
-                    />
-                  </div>
-                </div>
-              </section>
+              
+<div className= "flex gap-4 my-4 justify-center">
+          <OverViewCard
+            title="Overall Health"
+            value="94%"
+            percentage="Across all GRC metrics"
+            icon={<FaClock />}
+          />
+          <OverViewCard
+            title="Active Policies"
+            value="123"
+            percentage="Updated in last 30m days"
+            icon={<FaFile />}
+          />
+          <OverViewCard
+            title="Open Issues"
+            value="7"
+            percentage="Requiring attention"
+            icon={< FaFile/>}        />
+          </div>
 
               {/* Category Cards Section */}
               <section className="p-0.5 mt-7 bg-opacity-0 max-md:max-w-full">
