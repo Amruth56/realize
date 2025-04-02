@@ -1,6 +1,6 @@
 "use client";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
+import Footer from "@/resuable/footer/Footer";
+import Header from "@/resuable/header/Header";
 import PeerComparisonAIInsights from "@/components/peerComparision/PeerComparisionAIInsights";
 import PeerComparisonInvestmentBreakdown from "@/components/peerComparision/PeerComparisionInvestmentBreakdown";
 import PeerComparisonMetricCard from "@/components/peerComparision/PeerComparisionMetricCard";

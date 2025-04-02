@@ -1,5 +1,5 @@
 "use client";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/resuable/footer/Footer";
 import UtilizationAiInsights from "@/components/utilization/UtilizationAiInsights";
 import UtilizationFloatingButton from "@/components/utilization/UtilizationFloatingButton";
 import UtilizationHeader from "@/components/utilization/UtilizationHeader";

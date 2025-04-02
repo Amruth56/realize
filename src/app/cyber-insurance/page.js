@@ -5,8 +5,8 @@ import CyberInsuranceButton from "@/components/cyberInsurance/CyberInsuranceForm
 import CyberInsuranceFormField from "@/components/cyberInsurance/CyberInsuranceFormField";
 import CyberInsuranceChatMessage from "@/components/cyberInsurance/CyberInsuranceChatMessage";
 import CyberInsuranceStepIndicator from "@/components/cyberInsurance/CyberInsuranceStepIndicator";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Header from "@/resuable/header/Header";
+import Footer from "@/resuable/footer/Footer";
 
 const CyberInsuranceForm = () => {
   return (

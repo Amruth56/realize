@@ -1,6 +1,6 @@
 "use client";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
+import Footer from "@/resuable/footer/Footer";
+import Header from "@/resuable/header/Header";
 import PurchaseAIReviewSection from "@/components/purchaseAssessment/PurchaseAIReviewSection";
 import PurchaseBeforeAfterMetricsSection from "@/components/purchaseAssessment/PurchaseBeforeAfterMetricsSection";
 import PurchaseMetricsSection from "@/components/purchaseAssessment/PurchaseMetricsSection";

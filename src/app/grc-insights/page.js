@@ -4,8 +4,8 @@ import React from "react";
 import GrcMetricsCard from "@/components/grcInsights/GrcMetricsCard";
 import GrcCategoryCard from "@/components/grcInsights/GrcCategoryCard";
 import GrcActivityFeed from "@/components/grcInsights/GrcActivityItem";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Header from "@/resuable/header/Header";
+import Footer from "@/resuable/footer/Footer";
 
 function GRCInsightsDashboard() {
   return (

@@ -19,7 +19,6 @@ export default function Footer() {
       </div>
 
       <div className="flex gap-6">
-        {/* LinkedIn Icon */}
         <a
           href="https://linkedin.com/company/skysecure"
           target="_blank"
@@ -30,7 +29,6 @@ export default function Footer() {
           <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
         </a>
 
-        {/* Twitter Icon */}
         <a
           href="https://twitter.com/skysecure"
           target="_blank"

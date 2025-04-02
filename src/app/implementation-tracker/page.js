@@ -3,8 +3,8 @@ import ImplementationTrackerImplementationTimeline from "@/components/Implementa
 import ImplementationTrackerProfileSummary from "@/components/ImplementationTrackerHeader.jsx/ImplementationTrackerProfileSummary";
 import ImplementationTrackerProjectBoard from "@/components/ImplementationTrackerHeader.jsx/ImplementationTrackerProjectBoard";
 import React from "react";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Header from "@/resuable/header/Header";
+import Footer from "@/resuable/footer/Footer";
 
 
 function ImplementationTracker() {

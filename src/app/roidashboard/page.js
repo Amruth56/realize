@@ -1,6 +1,6 @@
 "use client";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
+import Footer from "@/resuable/footer/Footer";
+import Header from "@/resuable/header/Header";
 import ROIChartSection from "@/components/roidashboard/ROIChartSection";
 import ROIInsightCard from "@/components/roidashboard/ROIInsightCard";
 import ROIInvestmentTable from "@/components/roidashboard/ROIInvestmentTable";

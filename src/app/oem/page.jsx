@@ -1,6 +1,6 @@
 "use client";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
+import Footer from "@/resuable/footer/Footer";
+import Header from "@/resuable/header/Header";
 import OemInfoBanner from "@/components/oem/OemInfoBanner";
 import OemIntegrationGrid from "@/components/oem/OemIntegrationGrid";
 import OemStatusBar from "@/components/oem/OemStatusBar";

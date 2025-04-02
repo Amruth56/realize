@@ -5,8 +5,8 @@ import PlannedPurchaseChatAvatar from "@/components/plannedPurchase/PlannedPurch
 import PlannedPurchasePurchaseColumn from "@/components/plannedPurchase/PlannedPurchasePurchaseColumn";
 import PlannedPurchaseQuarterlyProgress from "@/components/plannedPurchase/PlannedPurchaseQuarterlyProgress";
 import PlannedPurchaseAIRecommendation from "@/components/plannedPurchase/PlannedPurchaseAIRecommendation";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Header from "@/resuable/header/Header";
+import Footer from "@/resuable/footer/Footer";
 
 function PlannedPurchases() {
   // In Review purchases data

@@ -1,9 +1,9 @@
 "use client";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/resuable/footer/Footer";
 import SearchSection from "@/components/dashboard/SearchSection";
 import WelcomeSection from "@/components/dashboard/WelcomeSection";
 import AgentsGrid2 from "@/components/dashboard2/AgentsGrid2";
-import Header from "@/components/header/Header";
+import Header from "@/resuable/header/Header";
 import React from "react";
 
 
