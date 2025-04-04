@@ -16,8 +16,8 @@ const Header = () => {
         />
       </div>
       <div className="flex gap-6 items-center max-sm:hidden mr-10">
-      <a href="#" className="text-base text-gray-600 cursor-pointer bg-white shadow-md rounded p-3">
-            <h1 className="text-black font-semibold text-xl"><span className="font-extrabold text-yellow-600 text-3xl mr-1 ">834</span>/1200</h1>
+      <a href="#" className="text-base text-gray-600 cursor-pointer bg-white shadow-md rounded p-3 rounded-full">
+            <h1 className="text-black font-semibold"><span className=" text-yellow-600 text-2xl mr-1 ">834</span>Coins</h1>
           </a>
       <a href="/listofpages" className="text-base text-gray-600 cursor-pointer hover:text-blue-500">
             List of Pages
