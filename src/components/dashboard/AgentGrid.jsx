@@ -1,88 +1,103 @@
 import AgentCard from "@/resuable/agentCard/AgentCard";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const AgentGrid = () => {
   const agents = [
     {
       id: 1,
-      name: "Financial Analyst AI",
+      name: "Assessment Agent",
       description: "Advanced financial forecasting and reporting automation",
       category: "Finance",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/a83df02b3919f713577cb7cd16e1f7137dda3089",
+        "/agent1.png",
     },
     {
       id: 2,
-      name: "Security Monitor AI",
+      name: "Analytics Agent",
       description: "24/7 system monitoring and threat detection",
       category: "Security",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0f7486da5efb35d27bd3fb7e9331578702fc01da",
+        "/agent2.png",
     },
     {
       id: 3,
-      name: "Operations Assistant",
+      name: "Deployment Agent",
       description: "Streamline workflows and process optimization",
       category: "Operations",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/7ca7fdfe9d1083da4dbd41dc0929fe9738e99f39",
+        "/agent3.png",
     },
     {
       id: 4,
-      name: "Financial Analyst AI",
+      name: "Finance Agent",
       description: "Advanced financial forecasting and reporting automation",
       category: "Finance",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/a83df02b3919f713577cb7cd16e1f7137dda3089",
+        "/agent1.png",
     },
     {
       id: 5,
-      name: "Security Monitor AI",
+      name: "HR Agent",
       description: "24/7 system monitoring and threat detection",
       category: "Security",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0f7486da5efb35d27bd3fb7e9331578702fc01da",
+        "/agent2.png",
     },
     {
       id: 6,
-      name: "Operations Assistant",
+      name: "Legal & Compliance",
       description: "Streamline workflows and process optimization",
       category: "Operations",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/7ca7fdfe9d1083da4dbd41dc0929fe9738e99f39",
+        "/agent3.png",
     },
     {
       id: 7,
-      name: "Financial Analyst AI",
+      name: "Customer Service Agent",
       description: "Advanced financial forecasting and reporting automation",
       category: "Finance",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/a83df02b3919f713577cb7cd16e1f7137dda3089",
+        "/agent1.png",
     },
     {
       id: 8,
-      name: "Security Monitor AI",
+      name: "Sales Agent",
       description: "24/7 system monitoring and threat detection",
       category: "Security",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0f7486da5efb35d27bd3fb7e9331578702fc01da",
+        "/agent2.png",
     },
     {
       id: 9,
-      name: "Operations Assistant",
+      name: "Marketing Agent",
       description: "Streamline workflows and process optimization",
       category: "Operations",
       imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/7ca7fdfe9d1083da4dbd41dc0929fe9738e99f39",
+        "/agent3.png",
     },
   ];
 
   return (
-    <section className="grid gap-6 px-20 py-8 bg-gray-50 grid-cols-[repeat(3,1fr)] max-md:px-10 max-md:py-8 max-md:grid-cols-[repeat(2,1fr)] max-sm:p-4 max-sm:grid-cols-[1fr]">
+    <section className="relative w-full px-6 py-10 bg-gray-50">
+    {/* Left Arrow */}
+    <div className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-md w-10 h-10 flex items-center justify-center">
+      <FontAwesomeIcon icon={faChevronLeft} className="text-gray-600" />
+    </div>
+
+    {/* Grid of AgentCards */}
+    <div className="grid gap-6 px-14 grid-cols-[repeat(3,1fr)] max-md:px-10 max-md:grid-cols-[repeat(2,1fr)] max-sm:px-4 max-sm:grid-cols-[1fr]">
       {agents.map((agent) => (
         <AgentCard key={agent.id} agent={agent} />
       ))}
-    </section>
+    </div>
+
+    {/* Right Arrow */}
+    <div className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-md w-10 h-10 flex items-center justify-center">
+      <FontAwesomeIcon icon={faChevronRight} className="text-gray-600" />
+    </div>
+  </section>
   );
 };
 
