@@ -8,7 +8,7 @@ import InfoBanner from '@/resuable/infoBanner/InfoBanner';
 import Footer from '@/resuable/footer/Footer';
 
 const AssessmentCard = ({ icon, title, description, features, buttonText }) => (
-  <Card className="flex flex-col p-8 bg-white border-2  rounded-xl w-full max-w-md h-auto">
+  <Card className="flex flex-col p-8 bg-white border-1  rounded-xl w-full max-w-md h-auto">
     <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center">
       <img src={icon} alt={title} className="w-6 h-6" />
     </div>
@@ -78,8 +78,8 @@ export default function Assessment() {
     <div className="min-h-screen flex flex-col">
       <Header/>
       <div className="flex-grow">
-        <CustomStepper currentStep={1}/> {/* Using renamed component */}
-        <InfoBanner/>
+        <CustomStepper currentStep={0}/>
+        <InfoBanner className='mx-6'/>
         <AssessmentCards />
       </div>
       <Footer/>

@@ -29,10 +29,18 @@ export default function ListOfPages() {
       <button
         className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition cursor-pointer"
         onClick={() => {
-          router.push("/grc-insights");
+          router.push("/grc-final-outcome");
         }}
       >
-        GRC Insights
+       grc-final-outcome
+      </button>
+      <button
+        className="px-4 py-2 bg-green-600 text-white rounded hover:bg-gray-700 transition cursor-pointer"
+        onClick={() => {
+          router.push("/grc-connection-popup");
+        }}
+      >
+        grc-connection-popup
       </button>
       <button
         className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition cursor-pointer"
@@ -137,6 +145,39 @@ export default function ListOfPages() {
         }}
       >
         Value Realization
+      </button>
+      <button
+        className="px-4 py-2 bg-green-600 text-white rounded hover:bg-gray-700 transition cursor-pointer"
+        onClick={() => {
+          router.push("/insurance-assessment");
+        }}
+      >
+        insurance-assessment
+      </button>
+      
+      <button
+        className="px-4 py-2 bg-green-600 text-white rounded hover:bg-gray-700 transition cursor-pointer"
+        onClick={() => {
+          router.push("/account-step-one");
+        }}
+      >
+        account step one
+      </button>
+      <button
+        className="px-4 py-2 bg-green-600 text-white rounded hover:bg-gray-700 transition cursor-pointer"
+        onClick={() => {
+          router.push("/incident-history");
+        }}
+      >
+        incident history
+      </button>
+      <button
+        className="px-4 py-2 bg-green-600 text-white rounded hover:bg-gray-700 transition cursor-pointer"
+        onClick={() => {
+          router.push("/assessment-agents");
+        }}
+      >
+        assessment-agents
       </button>
       <Footer></Footer>
     </div>
