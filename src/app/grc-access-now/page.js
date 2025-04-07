@@ -78,7 +78,7 @@ export default function GrcAccessNow() {
         </div>
 
         {/* Assessment Cards */}
-        <div className="mx-auto w-[1152px]">
+        <div className="mx-0 w-[1152px]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {assessments.map((card, index) => (
               <AssessmentCard

@@ -3,22 +3,25 @@
 import Footer from "@/resuable/footer/Footer";
 import Header from "@/resuable/header/Header";
 import InfoBanner from "@/resuable/infoBanner/InfoBanner";
-import { FaUser, FaFile, FaClock } from "react-icons/fa";
+import { FaUser, FaFile, FaClock,  FaMicrosoft } from "react-icons/fa";
 
 function MicrosoftAccountCreation() {
   return (
     <>
-      {" "}
+      
       <Header />
-      <div className="m-4">
+      <div className="m-6">
+        <div className="flex gap-4 items-center">
+        <FaMicrosoft className="text-blue-400 text-2xl"/>
         <p className="text-2xl font-semibold">Microsoft Account Creation</p>
+        </div>
         <InfoBanner className="mt-4" />
         <button className="bg-gray-900 text-white rounded-lg w-full p-4 my-6">
           Sign In With Microsoft
         </button>
         <h1 className="text-2xl font-bold my-4">Requested Permissions</h1>
         <div className="flex flex-col gap-4">
-          <div className="flex gap-2 bg-gray-100 p-4 rounded-md">
+          <div className="flex gap-2 bg-gray-50 p-4 rounded-md">
             <FaFile className="mt-2 text-blue-500" />
             <div>
               <h2 className="text-xl font-semibold">Read Directory Data</h2>
@@ -27,7 +30,7 @@ function MicrosoftAccountCreation() {
               </p>
             </div>
           </div>
-          <div className="flex gap-2 bg-gray-100 p-4 rounded-md">
+          <div className="flex gap-2 bg-gray-50 p-4 rounded-md">
             <FaClock className="mt-2 text-blue-500" />
             <div>
               <h2 className="text-xl font-semibold">Maintain Access To Data</h2>
@@ -36,7 +39,7 @@ function MicrosoftAccountCreation() {
               </p>
             </div>
           </div>
-          <div className="flex gap-2 bg-gray-100 p-4 rounded-md">
+          <div className="flex gap-2 bg-gray-50 p-4 rounded-md">
             <FaUser className="mt-2 text-blue-500" />
             <div>
               <h2 className="text-xl font-semibold">View User Profiles</h2>

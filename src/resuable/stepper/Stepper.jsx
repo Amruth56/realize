@@ -7,7 +7,7 @@ import StepLabel from '@mui/material/StepLabel';
 const CustomStepper = ({ currentStep = 0, steps=[] }) => {
     
     return (
-        <div className="w-full py-8 px-4">
+        <div className="w-full py-8">
             <MuiStepper activeStep={currentStep} alternativeLabel>
                 {steps.map((label) => (
                     <Step key={label}>
