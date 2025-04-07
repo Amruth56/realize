@@ -93,7 +93,7 @@
 
 export default function Footer(){
   return(
-    <div className="bg-white flex justify-between py-6 px-12 ">
+    <div className="bg-white flex justify-between py-6 px-12 border-t border-gray-300 ">
       <div>
      <p className="text-gray-600 text-sm">© 2025 Realize. All Rights Reserved.</p>
      </div>

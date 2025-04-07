@@ -74,11 +74,12 @@ const AssessmentCards = () => {
 };
 
 export default function Assessment() {
+  const steps = ['Select Method', 'Assessment', 'Results']
   return (
     <div className="min-h-screen flex flex-col">
       <Header/>
       <div className="flex-grow">
-        <CustomStepper currentStep={0}/>
+        <CustomStepper currentStep={0} steps ={steps} />
         <InfoBanner className='mx-6'/>
         <AssessmentCards />
       </div>

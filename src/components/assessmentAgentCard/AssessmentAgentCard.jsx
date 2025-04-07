@@ -1,20 +1,8 @@
 "use client";
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faShieldAlt,
-  faUmbrella,
-  faTasks,
-} from "@fortawesome/free-solid-svg-icons";
-
-const iconMap = {
-  shield: faShieldAlt,
-  umbrella: faUmbrella,
-  tasks: faTasks,
-};
 
 const AssessmentAgentCard = ({
-  icon,
+  icon,           // now expects a JSX element (e.g., <FaChartPie />)
   title,
   description,
   tag,
@@ -25,8 +13,8 @@ const AssessmentAgentCard = ({
   return (
     <div className="flex flex-col gap-4 p-6 bg-white rounded-lg shadow-sm border border-gray-200 w-full max-w-sm">
       <div className="flex items-center gap-3">
-        <div className="bg-gray-100 p-3 rounded-lg">
-          <FontAwesomeIcon icon={iconMap[icon]} className="text-xl text-blue-600" />
+        <div className="bg-gray-100 p-3 rounded-lg text-xl text-blue-600">
+          {icon}
         </div>
         <h2 className="text-base font-semibold text-gray-800">{title}</h2>
       </div>
