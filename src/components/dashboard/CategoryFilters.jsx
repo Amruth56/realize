@@ -16,7 +16,7 @@ const CategoryFilters = () => {
 
   const handleClick = (category) => {
     if (category === "Analytics") {
-      router.push("/dashboard2");
+      router.push("/analytic-agent");
     } if(category == "All Agents"){
       router.push("/dashboard")
     } else {
