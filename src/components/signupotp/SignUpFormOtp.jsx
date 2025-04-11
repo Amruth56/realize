@@ -14,11 +14,18 @@ const loginForm = () => {
 }
 
   return (
-    <section className="flex flex-col gap-36 pl-12 pr-20 pt-12 pb-40 w-[560px] max-md:w-full max-sm:px-6 max-sm:py-8">
-      {/* <Logo /> */}
+    <section className="flex flex-col gap-6 ">
+      <header className="mb-4">
+        <h1 className="mb-2.5 text-3xl font-bold leading-9 text-gray-900">
+          Create your Realize account
+        </h1>
+        <p className="text-base leading-5 text-gray-600">
+          Start realizing your tech investments with AI
+        </p>
+      </header>
 
-      <form className="flex flex-col gap-6">
-        <div className="flex gap-4 mb-4 max-sm:flex-col">
+      <form className="flex flex-col gap-2">
+        <div className="flex gap-4 mb-2 max-sm:flex-col">
           <div className="flex flex-col flex-1 gap-1">
             <label
               htmlFor="firstName"
@@ -73,7 +80,7 @@ const loginForm = () => {
           Resend OTP
         </button>
 
-        <div className="flex gap-3 items-center mx-0 my-4">
+        <div className="flex gap-3 items-center mx-0 my-2 flex justify-center">
           <div className="relative w-6 h-6">
             <input type="checkbox" id="terms" className="sr-only" />
             <label htmlFor="terms" className="cursor-pointer">
@@ -114,7 +121,7 @@ const loginForm = () => {
         </div>
       </form>
 
-      <footer className="mt-6 text-sm text-center text-gray-600">
+      <footer className=" text-sm text-center text-gray-600">
         <span>Already have an account?</span>{" "}
         <a href="#" className="text-blue-600 no-underline">
           Sign in

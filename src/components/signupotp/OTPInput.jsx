@@ -59,11 +59,11 @@ function OTPInput() {
   };
 
   return (
-    <div className="flex flex-col gap-2 my-6">
+    <div className="flex flex-col gap-2 my-4">
       <label htmlFor="otp-1" className="text-sm font-medium text-gray-700">
         OTP
       </label>
-      <div className="flex gap-4">
+      <div className="flex gap-4 justify-between">
         {otp.map((digit, index) => (
           <input
             key={index}
@@ -81,7 +81,7 @@ function OTPInput() {
           />
         ))}
       </div>
-      <div className="mt-2 text-sm font-medium text-blue-800">
+      <div className="mt-2 text-sm font-medium text-blue-800 flex justify-center">
         {timeLeft > 0
           ? `0:${timeLeft.toString().padStart(2, "0")} Seconds left`
           : "Time expired"}

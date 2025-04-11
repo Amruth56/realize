@@ -1,11 +1,18 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faShieldAlt,
+  faChartLine,
+  faUsers,
+  faRobot,
+} from "@fortawesome/free-solid-svg-icons";
 
 function EnterpriseFeatures() {
   const features = [
-    { icon: "ti-shield", text: "Enterprise-grade security" },
-    { icon: "ti-chart-line", text: "Advanced analytics" },
-    { icon: "ti-users", text: "Team collaboration" },
-    { icon: "ti-robot", text: "AI-powered insights" },
+    { icon: faShieldAlt, text: "Enterprise-grade security" },
+    { icon: faChartLine, text: "Advanced analytics" },
+    { icon: faUsers, text: "Team collaboration" },
+    { icon: faRobot, text: "AI-powered insights" },
   ];
 
   return (
@@ -14,7 +21,7 @@ function EnterpriseFeatures() {
       <ul className="flex flex-col gap-4">
         {features.map((feature, index) => (
           <li key={index} className="flex gap-3 items-center text-base">
-            <i className={`ti ${feature.icon} text-xl`} />
+            <FontAwesomeIcon icon={feature.icon} className=" text-black" />
             <span>{feature.text}</span>
           </li>
         ))}
