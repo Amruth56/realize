@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import LoginForm from "@/components/login/LoginForm";
-import WelcomePanel from "@/components/login/WelcomePanel";
+import LoginWelcomePanel from "@/components/login/LoginWelcomePanel";
 
 function LoginPage() {
   return (
@@ -30,9 +30,9 @@ function LoginPage() {
           max-sm:max-w-screen-sm
           max-sm:shadow-none
         ">
-        <div className="flex justify-between w-full">
+        <div className="flex justify-between w-full" >
           <LoginForm />
-          <WelcomePanel />
+          <LoginWelcomePanel />
         </div>
       </main>
     </section>

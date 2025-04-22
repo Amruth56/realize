@@ -22,13 +22,20 @@ function LoginForm() {
   }
 
   return (
-    <div className="flex flex-col p-12 w-1/2 max-md:w-full">
-      {/* <Logo /> */}
+    <div className="flex flex-col p-12 w-1/2">
+      <div className="mb-8">
+            <img
+              src="/realizeLogo.png"
+              alt="Realize Logo"
+              className="h-10 object-contain"
+            />
+          </div>
+
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-3 mt-20">
         <header className="flex flex-col gap-2.5 mb-11">
           <h1 className="text-2xl font-bold leading-6 text-gray-900">
-            Sign in to your Realize account
+            Sign in to your Realize account 
           </h1>
           <p className="text-base leading-6 text-gray-500">
             Enter your credentials to access your dashboard
