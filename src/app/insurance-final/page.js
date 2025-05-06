@@ -1,12 +1,8 @@
 "use client";
 
-import Header from "@/resuable/header/Header";
-import Footer from "@/resuable/footer/Footer";
-
 export default function CoverageOverview() {
   return (
     <>
-      <Header />
       <main className="px-4 py-8 max-w-6xl mx-auto">
         {/* Summary stats */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -144,7 +140,6 @@ export default function CoverageOverview() {
           </button>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

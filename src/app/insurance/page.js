@@ -2,10 +2,8 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
-import Header from "@/resuable/header/Header";
 import CustomStepper from '@/resuable/stepper/Stepper'; // Renamed import
 import InfoBanner from '@/resuable/infoBanner/InfoBanner';
-import Footer from '@/resuable/footer/Footer';
 
 const AssessmentCard = ({ icon, title, description, features, buttonText }) => (
   <Card className="flex flex-col p-8 bg-white border-1  rounded-xl w-full max-w-md h-auto">
@@ -77,13 +75,11 @@ export default function Assessment() {
   const steps = ['Select Method', 'Assessment', 'Results']
   return (
     <div className="min-h-screen flex flex-col">
-      <Header/>
       <div className="flex-grow">
         <CustomStepper currentStep={0} steps ={steps} />
         <InfoBanner className='mx-6'/>
         <AssessmentCards />
       </div>
-      <Footer/>
     </div>
   );
 }

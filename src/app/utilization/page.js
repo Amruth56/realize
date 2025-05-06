@@ -1,18 +1,15 @@
 "use client";
-import Footer from "@/resuable/footer/Footer";
 import UtilizationAiInsights from "@/components/utilization/UtilizationAiInsights";
 import UtilizationMetricCard from "@/components/utilization/UtilizationMetricCard";
 import UtilizationOptimizationRecommendations from "@/components/utilization/UtilizationOptimizationRecommendations";
 import UtilizationTrends from "@/components/utilization/UtilizationTrends";
 import React from "react";
-import Header from "@/resuable/header/Header";
 
 
 function UtilizationDashboard() {
   return (
     <div className="">
       <div className="flex flex-col pb-96 w-full bg-gray-50 max-md:pb-24 max-md:max-w-full">
-        <Header />
         <div className="flex items-start mr-7 mb-0 max-md:mr-2.5 max-md:mb-2.5">
           <main className="grow shrink-0 self-start px-6 py-8 mr-0 basis-0  w-fit max-md:px-5 max-md:max-w-full">
             <UtilizationAiInsights/>
@@ -95,7 +92,6 @@ function UtilizationDashboard() {
           </main>
         </div>
       </div>
-      <Footer></Footer>
     </div>
   );
 }

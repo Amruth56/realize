@@ -1,12 +1,9 @@
 "use client";
 
-import Header from "@/resuable/header/Header";
-import Footer from "@/resuable/footer/Footer";
 
 export default function CoverageRiskAssessment() {
   return (
     <>
-      <Header />
       <main className="px-4 py-8 max-w-4xl mx-auto">
         {/* Step Progress */}
         <div className="mb-8">
@@ -101,7 +98,6 @@ export default function CoverageRiskAssessment() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

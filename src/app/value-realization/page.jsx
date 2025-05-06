@@ -1,6 +1,5 @@
 "use client";
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
+
 import ValueRealizationAIInsightsCard from "@/components/valueRealization/ValueRealizationAIInsightsCard";
 import ValueRealizationDashboardHeader from "@/components/valueRealization/ValueRealizationDashboardHeader";
 import ValueRealizationFloatingActionButton from "@/components/valueRealization/ValueRealizationFloatingActionButton";
@@ -15,7 +14,6 @@ import { FaDollarSign, FaArrowUp, FaPercent, FaPiggyBank } from "react-icons/fa"
 function ValueRealizationDashboard() {
   return (
     <div className="flex flex-col bg-gray-50 min-h-[screen]">
-      <Header/>
           
       <main className="flex-1 p-8 mx-auto max-w-screen-xl max-md:px-4">
         <ValueRealizationDashboardHeader />
@@ -52,7 +50,6 @@ function ValueRealizationDashboard() {
         </div>
         <ValueRealizationStrategicRecommendations />
       </main>
-      <Footer />
       <ValueRealizationFloatingActionButton />
     </div>
   );

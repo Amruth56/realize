@@ -1,7 +1,6 @@
 "use client";
 
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
+
 import InfoBanner from "@/resuable/infoBanner/InfoBanner";
 import { FaUser, FaFile, FaClock,  FaMicrosoft } from "react-icons/fa";
 
@@ -9,7 +8,6 @@ function MicrosoftAccountCreation() {
   return (
     <>
       
-      <Header />
       <div className="m-6">
         <div className="flex gap-4 items-center">
         <FaMicrosoft className="text-blue-400 text-2xl"/>
@@ -65,7 +63,6 @@ function MicrosoftAccountCreation() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

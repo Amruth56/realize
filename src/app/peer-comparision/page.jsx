@@ -1,6 +1,5 @@
 "use client";
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
+
 import PeerComparisonAIInsights from "@/components/peerComparision/PeerComparisionAIInsights";
 import PeerComparisonInvestmentBreakdown from "@/components/peerComparision/PeerComparisionInvestmentBreakdown";
 import PeerComparisonMetricCard from "@/components/peerComparision/PeerComparisionMetricCard";
@@ -13,7 +12,6 @@ const PeerComparisonDashboard = () => {
     <section className="overflow-hidden bg-white rounded-lg border-2 border-gray-300 border-solid">
       <div className="w-full h-[910px] max-md:max-w-full">
         <div className="flex flex-col w-full bg-gray-50 max-md:max-w-full">
-          <Header />
 
           <div className="flex justify-between items-center m-6">
             <div>
@@ -91,7 +89,6 @@ const PeerComparisonDashboard = () => {
             /> */}
           </main>
 
-          <Footer />
         </div>
       </div>
     </section>

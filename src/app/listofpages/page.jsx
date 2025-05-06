@@ -1,6 +1,5 @@
 "use client";
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
+
 import { useRouter } from "next/navigation";
 
 export default function ListOfPages() {
@@ -8,7 +7,6 @@ export default function ListOfPages() {
 
   return (
     <div className="flex flex-col gap-3 p-4">
-      <Header></Header>
       <button
         className="px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition cursor-pointer"
         onClick={() => {
@@ -262,7 +260,6 @@ export default function ListOfPages() {
       >
         Utilization
       </button>
-      <Footer></Footer>
     </div>
   );
 }

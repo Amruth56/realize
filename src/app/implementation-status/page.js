@@ -1,12 +1,8 @@
 "use client";
 
-import Header from "@/resuable/header/Header";
-import Footer from "@/resuable/footer/Footer";
-
 export default function Microsoft365E3Details() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header />
 
       <main className="flex-grow mx-auto px-6 py-8 space-y-8">
         {/* Header Title & Summary */}
@@ -150,7 +146,6 @@ export default function Microsoft365E3Details() {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 }

@@ -1,7 +1,5 @@
 "use client";
 
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
 import CustomStepper from "@/resuable/stepper/Stepper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrosoft } from "@fortawesome/free-brands-svg-icons";
@@ -13,7 +11,6 @@ export default function GrcRiskAnalysis() {
 
   return (
     <>
-      <Header />
       <main className="bg-white px-6 lg:px-32 py-10 min-h-screen">
         {/* Stepper */}
         <CustomStepper currentStep={0} steps={steps} />
@@ -108,7 +105,6 @@ export default function GrcRiskAnalysis() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

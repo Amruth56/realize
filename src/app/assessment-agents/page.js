@@ -3,8 +3,6 @@
 import React from "react";
 import { FaShieldAlt, FaUmbrella, FaTasks } from "react-icons/fa";
 import AssessmentAgentCard from "@/components/assessmentAgentCard/AssessmentAgentCard";
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
 
 const AssessmentPage = () => {
   const agents = [
@@ -42,7 +40,6 @@ const AssessmentPage = () => {
 
   return (
     <>
-      <Header />
       <main className="px-16 py-10 bg-gray-50 min-h-screen">
         <div className="text-sm text-gray-500">
           Home &gt; Assessment Agent
@@ -61,7 +58,6 @@ const AssessmentPage = () => {
           ))}
         </div>
       </main>
-      <Footer />
     </>
   );
 };

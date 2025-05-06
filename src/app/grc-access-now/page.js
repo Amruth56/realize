@@ -1,7 +1,6 @@
 "use client";
 
-import Header from "@/resuable/header/Header";
-import Footer from "@/resuable/footer/Footer";
+
 import InfoBanner from "@/resuable/infoBanner/InfoBanner";
 import AssessmentCard from "@/resuable/assessmentCard/AssessmentCard";
 
@@ -49,7 +48,6 @@ export default function GrcAccessNow() {
 
   return (
     <>
-      <Header />
 
       <main className="px-6 lg:px-20 py-10 bg-white min-h-screen">
         {/* Breadcrumb */}
@@ -92,7 +90,6 @@ export default function GrcAccessNow() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

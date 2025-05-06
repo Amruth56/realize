@@ -2,9 +2,7 @@
 
 import AgentGrid from "@/components/dashboard/AgentGrid";
 import AiBot from "@/components/dashboard/AiBot";
-import Footer from "@/resuable/footer/Footer";
 import SearchSection from "@/components/dashboard/SearchSection";
-import Header from "@/resuable/header/Header";
 import * as React from "react";  // React import is unnecessary in Next.js 13 with React 18 and JSX Transform, but still works
 
 function InputDesign() {
@@ -15,14 +13,12 @@ function InputDesign() {
         rel="stylesheet"
       />
       <div className="min-h-screen bg-gray-50">
-        <Header />
         <main>
           <WelcomeSection />  
           <SearchSection />
           <AgentGrid />
         </main>
         <AiBot />
-        <Footer />
       </div>
     </>
   );

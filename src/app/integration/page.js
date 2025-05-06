@@ -1,6 +1,4 @@
 "use client";
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
 import IntegrationAssistantMessage from "@/components/integration/IntegrationAssistantMessage";
 import IntegrationIntegrationCard from "@/components/integration/IntegrationIntegrationCard";
 import IntegrationPrivacySection from "@/components/integration/IntegrationPrivacySection";
@@ -13,7 +11,6 @@ function IntegrationPage() {
     <main className="overflow-hidden bg-white rounded-lg border-2 border-gray-300 border-solid">
       <div className="w-full bg-opacity-0">
         <div className="w-full bg-gray-50">
-          <Header />
 
           <div>
               <h1 className="text-2xl font-semibold text-gray-800 m-2">
@@ -73,7 +70,6 @@ function IntegrationPage() {
               />
             </aside> */}
           </div>
-          <Footer />
         </div>
       </div>
     </main>

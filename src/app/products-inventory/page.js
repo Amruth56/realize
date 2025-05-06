@@ -1,7 +1,6 @@
 "use client";
 
-import Header from "@/resuable/header/Header";
-import Footer from "@/resuable/footer/Footer";
+
 
 import {
   FaUsers,
@@ -72,7 +71,6 @@ export default function MicrosoftInventory() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header />
       <main className="flex-grow  px-6 py-8">
         {/* Page Title */}
         <h1 className="text-xl font-semibold text-gray-900 mb-6">
@@ -152,7 +150,6 @@ export default function MicrosoftInventory() {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

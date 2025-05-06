@@ -5,8 +5,7 @@ import PlannedPurchaseChatAvatar from "@/components/plannedPurchase/PlannedPurch
 import PlannedPurchasePurchaseColumn from "@/components/plannedPurchase/PlannedPurchasePurchaseColumn";
 import PlannedPurchaseQuarterlyProgress from "@/components/plannedPurchase/PlannedPurchaseQuarterlyProgress";
 import PlannedPurchaseAIRecommendation from "@/components/plannedPurchase/PlannedPurchaseAIRecommendation";
-import Header from "@/resuable/header/Header";
-import Footer from "@/resuable/footer/Footer";
+
 
 function PlannedPurchases() {
   // In Review purchases data
@@ -56,7 +55,6 @@ function PlannedPurchases() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <Header />
       <div>
         <h1 className="text-2xl font-semibold text-gray-800 m-2">Planned Purchase</h1>
       </div>
@@ -80,7 +78,6 @@ function PlannedPurchases() {
       </section>
 
       <PlannedPurchaseChatAvatar />
-      <Footer />
       <PlannedPurchaseStatusIndicator />
     </main>
   );

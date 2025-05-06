@@ -1,12 +1,9 @@
 "use client";
 
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
 
 export default function CybersecurityPostureControls() {
   return (
     <>
-      <Header />
       <div className="px-4 py-8 max-w-4xl mx-auto">
         {/* Progress Header */}
         <div className="mb-8">
@@ -125,7 +122,6 @@ export default function CybersecurityPostureControls() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

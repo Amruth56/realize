@@ -3,8 +3,7 @@ import ImplementationTrackerImplementationTimeline from "@/components/Implementa
 import ImplementationTrackerProfileSummary from "@/components/ImplementationTrackerHeader.jsx/ImplementationTrackerProfileSummary";
 import ImplementationTrackerProjectBoard from "@/components/ImplementationTrackerHeader.jsx/ImplementationTrackerProjectBoard";
 import React from "react";
-import Header from "@/resuable/header/Header";
-import Footer from "@/resuable/footer/Footer";
+
 
 
 function ImplementationTracker() {
@@ -15,7 +14,6 @@ function ImplementationTracker() {
         rel="stylesheet"
       />
       <main className="min-h-screen bg-gray-50">
-        <Header />
 
         <div>
               <h1 className="text-2xl font-semibold text-gray-800 m-2">
@@ -28,7 +26,6 @@ function ImplementationTracker() {
         </section>
         <ImplementationTrackerProjectBoard />
         <ImplementationTrackerImplementationTimeline />
-        <Footer />
       </main>
     </>
   );

@@ -1,6 +1,5 @@
 "use client";
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
+
 import RecentActivity from "@/components/systemStatus/ActivityItem";
 import AlertCategories from "@/components/systemStatus/AlertCategories";
 import EventLog from "@/components/systemStatus/EventLog";
@@ -18,7 +17,6 @@ function SystemStatusDashboard() {
         rel="stylesheet"
       />
       <main className="min-h-screen bg-white">
-        <Header />
             <div>
               <h1 className="text-2xl font-semibold text-gray-800 m-2">
               AI Appraisal Engine
@@ -38,7 +36,7 @@ function SystemStatusDashboard() {
 
           <EventLog />
         </section>
-        <Footer />
+         
       </main>
     </>
   );

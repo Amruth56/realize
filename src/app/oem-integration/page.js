@@ -1,7 +1,5 @@
 "use client";
 
-import Header from "@/resuable/header/Header";
-import Footer from "@/resuable/footer/Footer";
 import OEMCard from "@/resuable/oemCard/OEMCard";
 
 import { faMicrosoft, faOracle } from "@fortawesome/free-brands-svg-icons";
@@ -34,7 +32,6 @@ export default function OEMIntegration() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
 
       <main className="flex-grow max-w-6xl mx-auto px-4 py-12 w-full">
         {/* Title */}
@@ -71,7 +68,6 @@ export default function OEMIntegration() {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 }

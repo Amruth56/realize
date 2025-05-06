@@ -1,5 +1,4 @@
 "use client";
-import BackgroundIcon from "@/components/loginotp/BackgroundIcon";
 import OTPInput from "@/components/signupotp/OTPInput";
 import React from "react";
 import { useRouter } from "next/navigation";

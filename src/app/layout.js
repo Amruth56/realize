@@ -4,6 +4,8 @@ import "./globals.css"; // Import global CSS
 // Font Awesome import and configuration
 import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS for Font Awesome
 import { config } from '@fortawesome/fontawesome-svg-core';
+import Header from "@/resuable/header/Header";
+import Footer from "@/resuable/footer/Footer";
 
 // Prevent Font Awesome from adding CSS automatically
 config.autoAddCss = false;
@@ -32,8 +34,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div>
+          <Header/>
+        </div>
         {children}
       </body>
+      <div>
+          <Footer/>
+        </div>
     </html>
   );
 }

@@ -3,8 +3,7 @@ import React from "react";
 
 import GrcCategoryCard from "@/components/grcInsights/GrcCategoryCard";
 import GrcActivityFeed from "@/components/grcInsights/GrcActivityItem";
-import Header from "@/resuable/header/Header";
-import Footer from "@/resuable/footer/Footer";
+
 import OverViewCard from "@/resuable/overViewCard/OverViewCard";
 import { FaClock, FaFile, FaFileExport, FaSyncAlt, FaExclamationTriangle } from "react-icons/fa";
 
@@ -14,7 +13,6 @@ function GRCInsightsDashboard() {
     <section className="overflow-hidden bg-white rounded-lg border-2 border-gray-300 border-solid">
       <div className="w-full bg-opacity-0">
         <div className="pb-32 w-full bg-slate-50 max-md:pb-24 max-md:max-w-full">
-          <Header />
           
 
           <main className="flex flex-col px-20 mb-0 w-full max-md:px-5 max-md:mb-2.5 max-md:max-w-full">
@@ -173,7 +171,6 @@ function GRCInsightsDashboard() {
           </main>
         </div>
       </div>
-      <Footer></Footer>
     </section>
   );
 }

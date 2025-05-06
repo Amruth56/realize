@@ -1,15 +1,13 @@
 "use client";
 import { useState } from 'react';
 
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
+
 
 function IncidentHistoryAndClaims() {
     const [severity, setSeverity] = useState('');
 
   return (
     <>
-      <Header />
       <div className="m-4 max-w-4xl mx-auto">
         {/* Progress Header */}
         <div className="w-full mb-8">
@@ -151,7 +149,6 @@ function IncidentHistoryAndClaims() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

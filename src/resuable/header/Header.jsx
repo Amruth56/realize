@@ -33,7 +33,7 @@ const Header = () => {
   }, []);
 
   return (
-    <nav className="relative flex items-center justify-between w-full px-4 py-2 h-[80px] bg-white shadow-sm z-50">
+    <nav className=" pl-12 relative flex items-center justify-between w-full px-4 py-2 h-[80px] bg-white shadow-sm z-50">
       <div className="cursor-pointer">
         {/* <Image
           src="/realizeLogo.png"
@@ -41,7 +41,7 @@ const Header = () => {
           height={150}
           alt="Realize Logo"
           onClick={() => router.push("/dashboard")}
-        /> */}
+        /> */}    
         <img
           src="/realizeLogo.png"
           alt="Realize Logo"

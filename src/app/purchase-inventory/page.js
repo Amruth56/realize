@@ -1,6 +1,5 @@
 "use client";
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
+
 import PurchaseInventoryAIInsights from "@/components/purchaseinventory/PurchaseInventoryAIInsights";
 import PurchaseInventoryChartSection from "@/components/purchaseinventory/PurchaseInventoryChartSection";
 import PurchaseInventoryFilterControls from "@/components/purchaseinventory/PurchaseInventoryFilterControls";
@@ -14,7 +13,6 @@ function PurchaseInventoryDashboard() {
   return (
     <div className="">
       <div className="flex flex-col w-full bg-gray-50 max-md:max-w-full">
-        <Header />
         <div>
         <h1 className="text-2xl font-semibold text-gray-800 m-2">Purchase Inventory</h1>
       </div>
@@ -57,7 +55,6 @@ function PurchaseInventoryDashboard() {
           />
         </main>
       </div>
-      <Footer></Footer>
     </div>
   );
 }

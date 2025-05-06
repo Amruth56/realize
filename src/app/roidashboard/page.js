@@ -1,19 +1,16 @@
 "use client";
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
+
 import ROIChartSection from "@/components/roidashboard/ROIChartSection";
 import ROIInsightCard from "@/components/roidashboard/ROIInsightCard";
 import ROIInvestmentTable from "@/components/roidashboard/ROIInvestmentTable";
 import React from "react";
 import OverViewCard from "@/resuable/overViewCard/OverViewCard";
-import { FaUsers, FaDollarSign, FaClipboardList } from "react-icons/fa";
 
 function ROIDashboard() {
   return (
     <section className="overflow-hidden bg-white rounded-lg border-2 border-gray-300 border-solid">
       <div className="flex flex-col items-end w-full bg-opacity-0">
         <div className="flex flex-col self-start w-full bg-white max-w-[1440px] max-md:max-w-full">
-          <Header />
           <div className="flex justify-between items-center m-6">
             <div>
               <h1 className="text-2xl font-semibold text-gray-800">
@@ -61,7 +58,6 @@ function ROIDashboard() {
           </div>
         </div>
 
-        <Footer />
       </div>
     </section>
   );

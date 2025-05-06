@@ -5,13 +5,11 @@ import CyberInsuranceButton from "@/components/cyberInsurance/CyberInsuranceForm
 import CyberInsuranceFormField from "@/components/cyberInsurance/CyberInsuranceFormField";
 import CyberInsuranceChatMessage from "@/components/cyberInsurance/CyberInsuranceChatMessage";
 import CyberInsuranceStepIndicator from "@/components/cyberInsurance/CyberInsuranceStepIndicator";
-import Header from "@/resuable/header/Header";
-import Footer from "@/resuable/footer/Footer";
+
 
 const CyberInsuranceForm = () => {
   return (
     <main className="w-full bg-gray-50 min-h-screen">
-      <Header />
 
       <section className="px-4 py-8 mx-auto max-w-screen-xl">
         <div className="flex justify-center">
@@ -147,7 +145,6 @@ const CyberInsuranceForm = () => {
           }
         />
       </section>
-      <Footer></Footer>
     </main>
   );
 };

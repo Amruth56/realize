@@ -3,8 +3,6 @@
 import React from "react";
 import { FaChartPie, FaUsers } from "react-icons/fa";
 import AssessmentAgentCard from "@/components/assessmentAgentCard/AssessmentAgentCard";
-import Footer from "@/resuable/footer/Footer";
-import Header from "@/resuable/header/Header";
 import InfoBanner from "@/resuable/infoBanner/InfoBanner";
 
 const AnalyticAgent = () => {
@@ -34,7 +32,6 @@ const AnalyticAgent = () => {
 
   return (
     <>
-      <Header />
       <main className="px-16 py-10 bg-gray-50 min-h-screen">
         <div className="text-sm text-gray-500">Home &gt; Analytics Agent</div>
         <h1 className="text-2xl font-semibold text-gray-900 my-7">
@@ -52,7 +49,6 @@ const AnalyticAgent = () => {
           ))}
         </div>
       </main>
-      <Footer />
     </>
   );
 };
